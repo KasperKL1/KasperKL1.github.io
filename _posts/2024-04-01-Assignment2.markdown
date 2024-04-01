@@ -14,3 +14,12 @@ We make a map of SF to show where the forgery/counterfeiting takes place.
 
 
 Here we see that the most forgeries take place in the Southern district.
+
+```html
+<embed 
+       type="text/html" 
+       src="/assets/html/forgery_trend.html"
+       width="1100"
+       height="600"
+       >
+</embed>
