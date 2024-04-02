@@ -79,7 +79,7 @@ This table shows that the district with the most occurrences of Forgery/Counterf
         <h1>Heat Map displaying Forgery/Counterfeiting in San Francisco</h1>
 </header>
 
-We make a map of San Francisco to show where exactly the forgery/counterfeiting takes place.
+We make a map of San Francisco to show where exactly the forgery/counterfeiting takes place. You can increase the frames per second to 10, to see a more distinct evolution in occurrences over the years. 
 
 <embed 
        type="text/html" 
