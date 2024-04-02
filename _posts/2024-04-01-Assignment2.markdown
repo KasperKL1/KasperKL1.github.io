@@ -4,7 +4,7 @@ title:  "Social Data Analysis and Visualization: Assignment 2"
 date:   2024-03-31 14:40:25 +0200
 categories: jekyll update
 ---
-Firstly we want to look at the different crime categories to determine which category has the most characteristic evolution over the years from 2003 to 2017.
+Firstly, we want to look at the different crime categories to determine which category has the most characteristic evolution over the years from 2003 to 2017.
 
 ![Placeholder Screenshot](/assets/images/newplot.png)
 
