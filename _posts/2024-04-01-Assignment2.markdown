@@ -11,21 +11,21 @@ Firstly, we want to look at the different crime categories to determine which ca
 
 We want to look at forgery/counterfeiting. Because this category seems to be decreasing rapidly in recent years. This could be due to the fact that documents are being digitalized more and more and therefore, these are not as easily forged as they were in the past.
 
-        |   Count  |  Category  |
-        |----------|------------|
-        |   1669   |  BAYVIEW   |
-        |   2541   |  CENTRAL   |
-        |   2094   | INGLESIDE  |
-        |   2764   |  MISSION   |
-        |   2808   | NORTHERN   |
-        |   1045   |    PARK    |
-        |   1355   |  RICHMOND  |
-        |   5033   |  SOUTHERN  |
-        |   2262   |  TARAVAL   |
-        |   1229   | TENDERLOIN |
+              |   Count  |  Category  |
+              |----------|------------|
+              |   1669   |  BAYVIEW   |
+              |   2541   |  CENTRAL   |
+              |   2094   | INGLESIDE  |
+              |   2764   |  MISSION   |
+              |   2808   | NORTHERN   |
+              |   1045   |    PARK    |
+              |   1355   |  RICHMOND  |
+              |   5033   |  SOUTHERN  |
+              |   2262   |  TARAVAL   |
+              |   1229   | TENDERLOIN |
+This table shows that the district with the most occurrences of is Southern, which is where the financial area is located.
 
-
-We make a map of San Francisco to show where the forgery/counterfeiting takes place.
+We make a map of San Francisco to show where exactly the forgery/counterfeiting takes place.
 
 <embed 
        type="text/html" 
