@@ -61,9 +61,10 @@ We want to look at forgery/counterfeiting. Because this category seems to be dec
         </tr>
     </tbody>
 </table>
+This table shows that the district with the most occurrences of is Southern, which is where the financial area is located.
 
 
-We make a map of San Francisco to show where the forgery/counterfeiting takes place.
+We make a map of San Francisco to show where exactly the forgery/counterfeiting takes place.
 
 <embed 
        type="text/html" 
