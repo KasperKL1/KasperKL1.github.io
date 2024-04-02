@@ -75,11 +75,12 @@ We make a map of San Francisco to show where exactly the forgery/counterfeiting 
 
 From this heatmap we clearly see a decrease in occurences of forgery/counterfeiting over time. We see that the southern district has the highest denisty over time. From this map we can also see that the occurences of forgery/counterfeiting in the southern district are in fact happening in the financial area which can be seen on this map: (https://commons.wikimedia.org/wiki/File:SF_Financial_District_map.png)
 
-Now, let's look at the total counts for this crime type, for each hour, for each year. Select a couple of years to get a visual comparison between two years. For example, if you select 2003 and 2017 you can see a clear decrease in total counts. 
+
 
 
 ![Heatmap of San Fransisco Financial Districs](/assets/images/SF_Financial_District_map.png)
 
+Now, let's look at the total counts for this crime type, for each hour, for each year. Select a couple of years to get a visual comparison between two years. For example, if you select 2003 and 2017 you can see a clear decrease in total counts. 
 
 <embed 
        type="text/html" 
