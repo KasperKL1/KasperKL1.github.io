@@ -6,7 +6,7 @@ categories: jekyll update
 ---
 
  <header>
-        <h1>Bar charts displaying evolution of occurences for each crime type</h1>
+        <h1>Bar charts displaying evolution of occurences</h1>
 </header>
 Firstly, we want to look at the different crime categories to determine which category has the most characteristic evolution over the years from 2003 to 2017.
 
