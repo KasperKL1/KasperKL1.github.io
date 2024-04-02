@@ -12,7 +12,7 @@ Firstly, we want to look at the different crime categories to determine which ca
 We want to look at forgery/counterfeiting. Because this category seems to be decreasing rapidly in recent years. This could be due to the fact that documents are being digitalized more and more and therefore, these are not as easily forged as they were in the past.
 
 
-We make a map of SF to show where the forgery/counterfeiting takes place.
+We make a map of San Francisco to show where the forgery/counterfeiting takes place.
 
 # HEATMAP GOES HERE
 
@@ -28,4 +28,4 @@ From this heatmap we clearly see a decrease in occurences of forgery/counterfeit
        height="600"
        >
 
-From this plot we clearly see the decrease in occurrences over the years. Furthermore, we see that the most occurrences take place at midnight. This might be due to bad time notation.
+Now, let's look at the total counts for this crime type, for each hour, for each year. Select a couple of years to get a visual comparison between two years. For example, if you select 2003 and 2017 you can see a clear decrease in total counts. 
