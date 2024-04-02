@@ -39,6 +39,8 @@ From this heatmap we clearly see a decrease in occurences of forgery/counterfeit
 ![Heatmap of San Fransisco Financial Districs](/assets/images/SF_Financial_District_map.png)
 
 
+Now, let's look at the total counts for this crime type, for each hour, for each year. Select a couple of years to get a visual comparison between two years. For example, if you select 2003 and 2017 you can see a clear decrease in total counts. 
+
 <embed 
        type="text/html" 
        src="/assets/html/forgery_rt.html"
@@ -46,4 +48,3 @@ From this heatmap we clearly see a decrease in occurences of forgery/counterfeit
        height="600"
        >
 
-Now, let's look at the total counts for this crime type, for each hour, for each year. Select a couple of years to get a visual comparison between two years. For example, if you select 2003 and 2017 you can see a clear decrease in total counts. 
