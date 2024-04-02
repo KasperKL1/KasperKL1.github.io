@@ -11,18 +11,56 @@ Firstly, we want to look at the different crime categories to determine which ca
 
 We want to look at forgery/counterfeiting. Because this category seems to be decreasing rapidly in recent years. This could be due to the fact that documents are being digitalized more and more and therefore, these are not as easily forged as they were in the past.
 
-        |   Count  |  Category  |
-        |----------|------------|
-        |   1669   |  BAYVIEW   |
-        |   2541   |  CENTRAL   |
-        |   2094   | INGLESIDE  |
-        |   2764   |  MISSION   |
-        |   2808   | NORTHERN   |
-        |   1045   |    PARK    |
-        |   1355   |  RICHMOND  |
-        |   5033   |  SOUTHERN  |
-        |   2262   |  TARAVAL   |
-        |   1229   | TENDERLOIN |
+<table>
+    <thead>
+        <tr>
+            <th>Count</th>
+            <th>Category</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1669</td>
+            <td>BAYVIEW</td>
+        </tr>
+        <tr>
+            <td>2541</td>
+            <td>CENTRAL</td>
+        </tr>
+        <tr>
+            <td>2094</td>
+            <td>INGLESIDE</td>
+        </tr>
+        <tr>
+            <td>2764</td>
+            <td>MISSION</td>
+        </tr>
+        <tr>
+            <td>2808</td>
+            <td>NORTHERN</td>
+        </tr>
+        <tr>
+            <td>1045</td>
+            <td>PARK</td>
+        </tr>
+        <tr>
+            <td>1355</td>
+            <td>RICHMOND</td>
+        </tr>
+        <tr>
+            <td>5033</td>
+            <td>SOUTHERN</td>
+        </tr>
+        <tr>
+            <td>2262</td>
+            <td>TARAVAL</td>
+        </tr>
+        <tr>
+            <td>1229</td>
+            <td>TENDERLOIN</td>
+        </tr>
+    </tbody>
+</table>
 
 
 We make a map of San Francisco to show where the forgery/counterfeiting takes place.
