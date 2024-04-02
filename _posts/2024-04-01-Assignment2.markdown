@@ -19,7 +19,8 @@ We want to look at forgery/counterfeiting. Because this category seems to be dec
  <header>
         <h1>Table displaying occurences per district</h1>
 </header>
-This table shows that the district with the most occurrences of is Southern, which is where the financial area is located.
+
+To become more specific in our search, let's look at the number of occurences of forgery/counterfeiting per district. 
 
 <table>
     <thead>
@@ -71,6 +72,8 @@ This table shows that the district with the most occurrences of is Southern, whi
         </tr>
     </tbody>
 </table>
+
+This table shows that the district with the most occurrences of Forgery/Counterfeiting is Southern, which is where the financial area is located.
 
  <header>
         <h1>Heat Map displaying Forgery/Counterfeiting in San Francisco</h1>
