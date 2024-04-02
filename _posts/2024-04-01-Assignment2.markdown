@@ -100,7 +100,7 @@ From this heatmap we clearly see a decrease in occurences of forgery/counterfeit
         <h1>Interactive hourly plot</h1>
 </header>
 
-Now, let's look at the total counts for this crime type, for each hour, for each year. Select a couple of years to get a visual comparison between two years. For example, if you select 2003 and 2017 you can see a clear decrease in total counts. Important to notice that the extremely high count at hour 0 might be due to an error in the way that the data is registered by the policemen. 
+Now, let's look at the total counts for this crime type, for each hour, for each year. Select a couple of years to get a visual comparison between two years. For example, if you select 2003 and 2017 you can see a clear decrease in total counts. Important to notice that the extremely high count at hour 0 might be due to an error in the way that the data is registered by the police. 
 
 <div style="display: flex; justify-content: center;">
     <embed 
