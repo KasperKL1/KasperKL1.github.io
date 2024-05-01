@@ -17,8 +17,6 @@ Firstly, we want to look at the different crime categories to determine which ca
 
 We want to look at forgery/counterfeiting. Because this category seems to be decreasing rapidly in recent years. This could be due to the fact that documents are being digitalized more and more and therefore, these are not as easily forged as they were in the past.
 
-
-
 To become more specific in our search, let's look at the number of occurences of forgery/counterfeiting per district. 
 
  <header>
