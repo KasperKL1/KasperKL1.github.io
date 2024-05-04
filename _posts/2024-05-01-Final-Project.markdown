@@ -29,23 +29,28 @@ These basic visualizations provides an overview of the data, and examining these
 
 <br>
 
+To get a more detailed look, the weekly data has been divided, so hourly data is available for each day of the week. By choosing the day(s) we wish to examine, we can get a more detailed look into the trends of each weekday. For example, if we look at the days monday-friday and compare them to sunday/saturday, it is apparent that, while there are more accidents in the weekdays, the weekend sees an increase in acidents in the nighttime. 
+
 <div style="display: flex; justify-content: center;">
     <embed 
            type="text/html" 
-           src="/assets/html/heatmap.html"
+           src="/assets/html/Bokeh.html"
            width="1100"
            height="600"
            >
 </div>
 
-INSERT BOKEH HVOR MAN KAN VÆLGE UGEDAGE OG FÅR TIMEVÆRDIER FOR UGEDAGENE. 
-INSERT BOKEH HVOR MAN KAN VÆLGE ÅR OG FÅ MÅNEDER Bign
+<div style="display: flex; justify-content: center;">
+    <embed 
+           type="text/html" 
+           src="/assets/html/Bokeh.html"
+           width="1100"
+           height="600"
+           >
+</div>
+
 
 <br>
-
-
-
-
 
 
 
