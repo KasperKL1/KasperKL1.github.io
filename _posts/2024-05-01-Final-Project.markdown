@@ -30,3 +30,12 @@ These basic visualizations provides an overview of the data, and examining these
 
 
 
+### HeatMap of all collisions in different conditions (Rain, snow etc.) 
+<div style="display: flex; justify-content: center;">
+    <embed 
+           type="text/html" 
+           src="/assets/html/ny_map.html"
+           width="1100"
+           height="600"
+           >
+</div>
