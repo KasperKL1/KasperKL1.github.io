@@ -29,10 +29,17 @@ These basic visualizations provides an overview of the data, and examining these
 
 <br>
 
-
+<div style="display: flex; justify-content: center;">
+    <embed 
+           type="text/html" 
+           src="/assets/html/heatmap.html"
+           width="1100"
+           height="600"
+           >
+</div>
 
 INSERT BOKEH HVOR MAN KAN VÆLGE UGEDAGE OG FÅR TIMEVÆRDIER FOR UGEDAGENE. 
-INSERT BOKEH HVOR MAN KAN VÆLGE ÅR OG FÅ MÅNEDER
+INSERT BOKEH HVOR MAN KAN VÆLGE ÅR OG FÅ MÅNEDER Bign
 
 <br>
 
