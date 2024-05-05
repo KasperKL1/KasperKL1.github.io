@@ -43,16 +43,11 @@ To get a more detailed look, the weekly data has been divided, so hourly data is
 <div style="display: flex; justify-content: center;">
     <embed 
            type="text/html" 
-           src="/assets/html/Bokeh.html"
+           src="/assets/html/Bokeh2.html"
            width="1100"
            height="600"
            >
 </div>
-
-
-<br>
-
-
 
 
 ### HeatMap of all collisions in different conditions (Rain, snow etc.) 
