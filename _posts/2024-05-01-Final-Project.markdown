@@ -273,6 +273,26 @@ Much simpler due to fewer instances.
 
 #### Comparing weather phenomena affect on collisions
 
+<div style="display: flex; justify-content: center;">
+    <embed 
+           type="text/html" 
+           src="/assets/html/proportion_of_persons_injured.html"
+           width="1100"
+           height="600"
+           >
+</div>
+
+<div style="display: flex; justify-content: center;">
+    <embed 
+           type="text/html" 
+           src="/assets/html/proportion_of_persons_killed.html"
+           width="1100"
+           height="600"
+           >
+</div>
+
+
+
 
 #### Bubblemap of all collisions in different conditions (Rain, snow etc.) 
 
