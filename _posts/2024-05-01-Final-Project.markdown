@@ -13,6 +13,12 @@ carousels:
     - image:  /assets/images/MonthlyNormal.png
     - image:  /assets/images/WeeklyNormal.png
     - image:  /assets/images/HourlyNormal.png
+  - images: 
+    - image:  /assets/images/YearRain.png
+    - image:  /assets/images/MonthlyRain.png
+    - image:  /assets/images/WeeklyRain.png
+    - image:  /assets/images/HourlyRain.png
+---  
 ---
 
 
@@ -27,6 +33,7 @@ First, some initial vizualization. Use the arrows to view the 4 different plots,
 <br>
 
   {% include carousel.html height="50" unit="%" duration="7" number="1" %}
+ 
 
 
 
@@ -114,6 +121,16 @@ These happenins vary from minor bumps to deadly accidents. Naturally, the main f
            height="600"
            >
 </div>
+
+
+ <header>
+        <h1>Weather Type: Rain</h1>
+ </header>
+
+
+ {% include carousel.html height="50" unit="%" duration="7" number="3" %}
+
+
 
 
 <br>
