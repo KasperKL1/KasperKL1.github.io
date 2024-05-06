@@ -212,4 +212,6 @@ First, the 'Normal Weather' category is examined. Naturally, there are a much hi
 </div>
 
 
+{% include image-gallery.html folder="/uploads/album" %}
+
 
