@@ -95,7 +95,7 @@ First, the 'Normal Weather' category is examined. Naturally, there are a much hi
 <div style="display: flex; justify-content: center;">
     <embed 
            type="text/html" 
-           src="/assets/html/deaths_events_normal_weather_heatmap.html"
+           src="/assets/html/deaths_events_bubblemap_normal_weather.html"
            width="1300"
            height="600"
            >
@@ -156,7 +156,7 @@ First, the 'Normal Weather' category is examined. Naturally, there are a much hi
 <div style="display: flex; justify-content: center;">
     <embed 
            type="text/html" 
-           src="/assets/html/Normal_Weather_heatmap.html"
+           src="/assets/html/heatmap_normal_weather.html"
            width="1100"
            height="600"
            >
@@ -168,7 +168,7 @@ First, the 'Normal Weather' category is examined. Naturally, there are a much hi
 <div style="display: flex; justify-content: center;">
     <embed 
            type="text/html" 
-           src="/assets/html/Rain_Present_heatmap.html"
+           src="/assets/html/heatmap_snow_present.html"
            width="1100"
            height="600"
            >
@@ -179,8 +179,13 @@ First, the 'Normal Weather' category is examined. Naturally, there are a much hi
 <div style="display: flex; justify-content: center;">
     <embed 
            type="text/html" 
-           src="/assets/html/Snow_Present_heatmap.html"
+           src="/assets/html/heatmap_snow_present.html"
            width="1100"
            height="600"
            >
 </div>
+
+
+
+
+
