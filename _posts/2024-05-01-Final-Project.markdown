@@ -75,17 +75,9 @@ First, the 'Normal Weather' category is examined. Naturally, there are a much hi
 
 Since normal weather is a year round occurence, and by far the most normal weather condition, the initial barplots do not vary significantly from those that were presented earlier.  
 
-<div style="display: flex; justify-content: center;">
-    <embed 
-           type="text/html" 
-           src="/assets/html/Normal_Weather_map.html"
-           width="1100"
-           height="600"
-           >
-</div>
+<br>
 
-
- * Normal Weather happenings
+Now let's look at the areas in which the occurences are happening. The follwing is a biblle-plot, where the bubble size and color indicates the number of reported accidents for each area. 
 
 <div style="display: flex; justify-content: center;">
     <embed 
@@ -96,6 +88,21 @@ Since normal weather is a year round occurence, and by far the most normal weath
            >
 </div>
 
+This plot is a good indicator as to where one should be extra careful, or perhaps, where law enforcement should examine possible changes to counter the higher number of events. 
+
+<br>
+
+To get a more specific look at the happenings, the following plot displays the areas with the most occurences. 
+
+
+<div style="display: flex; justify-content: center;">
+    <embed 
+           type="text/html" 
+           src="/assets/html/Normal_Weather_map.html"
+           width="1100"
+           height="600"
+           >
+</div>
 
 
 
