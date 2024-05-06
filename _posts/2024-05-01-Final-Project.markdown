@@ -19,12 +19,30 @@ carousels:
     - image:  /assets/images/WeeklyRain.png
     - image:  /assets/images/HourlyRain.png
   - images: 
-    - image:  /assets/images/YearlyRain.png
-    - image:  /assets/images/MonthlyRain.png
-    - image:  /assets/images/WeeklyRain.png
-    - image:  /assets/images/HourlyRain.png  
+    - image:  /assets/images/YearlySnow.png
+    - image:  /assets/images/MonthlySnow.png
+    - image:  /assets/images/WeeklySnow.png
+    - image:  /assets/images/HourlySnow.png  
+  - images: 
+    - image:  /assets/images/YearlyVO.png
+    - image:  /assets/images/MonthlyVO.png
+    - image:  /assets/images/WeeklyVO.png
+    - image:  /assets/images/HourlyVO.png    
 ---  
 ---
+
+<style>
+  .container {
+    display: flex;        /* Flexbox layout to align children side by side */
+    justify-content: center; /* Center the plots horizontally */
+    align-items: center;  /* Align the plots vertically */
+    gap: 20px;            /* Space between the plots */
+  }
+  .plot {
+    border: 1px solid #ccc; /* Optional border for better visibility */
+    padding: 10px;
+  }
+</style>
 
 
 
@@ -174,8 +192,111 @@ Much simpler due to fewer instances.
  {% include carousel.html height="50" unit="%" duration="7" number="4" %}
 
 
+<div class="container">
+    <div class="plot">
+        <embed 
+               type="text/html" 
+               src="/assets/html/bubblemap_snow.html"
+               width="550"   
+               height="600"
+               >
+    </div>
+    <div class="plot">
+        <embed 
+               type="text/html" 
+               src="/assets/html/deaths_events_bubblemap_snow.html"
+               width="550"   
+               height="600"
+               >
+    </div>
+</div>
 
- 
+
+<div style="display: flex; justify-content: center;">
+    <embed 
+           type="text/html" 
+           src="/assets/html/Snow_Present_map.html"
+           width="1100"
+           height="600"
+           >
+</div>
+
+<header>
+        <h1>Weather Type: Vision obstruction</h1>
+ </header>
+
+{% include carousel.html height="50" unit="%" duration="7" number="5" %}
+
+  * Rain
+
+<div style="display: flex; justify-content: center;">
+    <embed 
+           type="text/html" 
+           src="/assets/html/bubblemap_rain.html"
+           width="1100"
+           height="600"
+           >
+</div>
+
+Much simpler due to fewer instances.
+
+<div style="display: flex; justify-content: center;">
+    <embed 
+           type="text/html" 
+           src="/assets/html/deaths_events_bubblemap_rain.html"
+           width="1300"
+           height="600"
+           >
+</div>
+
+<div style="display: flex; justify-content: center;">
+    <embed 
+           type="text/html" 
+           src="/assets/html/Rain_Present_map.html"
+           width="1300"
+           height="600"
+           >
+</div>
+
+
+ <header>
+        <h1>Weather Type: Snow</h1>
+ </header>
+
+ {% include carousel.html height="50" unit="%" duration="7" number="4" %}
+
+
+<div class="container">
+    <div class="plot">
+        <embed 
+               type="text/html" 
+               src="/assets/html/bubblemap_snow.html"
+               width="550"   
+               height="600"
+               >
+    </div>
+    <div class="plot">
+        <embed 
+               type="text/html" 
+               src="/assets/html/deaths_events_bubblemap_snow.html"
+               width="550"   
+               height="600"
+               >
+    </div>
+</div>
+
+
+<div style="display: flex; justify-content: center;">
+    <embed 
+           type="text/html" 
+           src="/assets/html/Snow_Present_map.html"
+           width="1100"
+           height="600"
+           >
+</div>
+
+
+
 <br>
 <br>
 <br>
@@ -199,14 +320,7 @@ Much simpler due to fewer instances.
 
  * Snow
 
-<div style="display: flex; justify-content: center;">
-    <embed 
-           type="text/html" 
-           src="/assets/html/bubblemap_snow.html"
-           width="1100"
-           height="600"
-           >
-</div>
+
 
  * Vision Obscuration
 <div style="display: flex; justify-content: center;">
