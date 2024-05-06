@@ -14,7 +14,7 @@ carousels:
     - image:  /assets/images/WeeklyNormal.png
     - image:  /assets/images/HourlyNormal.png
   - images: 
-    - image:  /assets/images/YearRain.png
+    - image:  /assets/images/YearlyRain.png
     - image:  /assets/images/MonthlyRain.png
     - image:  /assets/images/WeeklyRain.png
     - image:  /assets/images/HourlyRain.png
@@ -130,6 +130,27 @@ These happenins vary from minor bumps to deadly accidents. Naturally, the main f
 
  {% include carousel.html height="50" unit="%" duration="7" number="3" %}
 
+  * Rain
+
+<div style="display: flex; justify-content: center;">
+    <embed 
+           type="text/html" 
+           src="/assets/html/bubblemap_rain.html"
+           width="1100"
+           height="600"
+           >
+</div>
+
+
+
+<div style="display: flex; justify-content: center;">
+    <embed 
+           type="text/html" 
+           src="/assets/html/deaths_events_bubblemap_rain.html"
+           width="1300"
+           height="600"
+           >
+</div>
 
 
 
@@ -149,17 +170,6 @@ These happenins vary from minor bumps to deadly accidents. Naturally, the main f
     <embed 
            type="text/html" 
            src="/assets/html/bubblemap_normal_weather.html"
-           width="1100"
-           height="600"
-           >
-</div>
-
-  * Rain
-
-<div style="display: flex; justify-content: center;">
-    <embed 
-           type="text/html" 
-           src="/assets/html/bubblemap_rain.html"
            width="1100"
            height="600"
            >
