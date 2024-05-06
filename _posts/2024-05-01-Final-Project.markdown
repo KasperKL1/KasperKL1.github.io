@@ -107,18 +107,29 @@ Since normal weather is a year round occurence, and by far the most normal weath
 
 <br>
 
-Now let's look at the areas in which the occurences are happening. The follwing is a bubble-plot, where the bubble size and color indicates the number of reported accidents for each area. 
+Now let's look at the areas in which the occurences are happening. The follwing is a bubble-plot, where the bubble size and color indicates the number of reported accidents for each area.
+This plot is a good indicator as to where one should be extra careful, or perhaps, where law enforcement should examine possible changes to counter the higher number of events.  
+These happenins vary from minor bumps to deadly accidents. Naturally, the main focus should be to prevent deadly accidents. The plot below, displays a bubble-plot of places where deadly accidents have occured. 
 
-<div style="display: flex; justify-content: center;">
-    <embed 
-           type="text/html" 
-           src="/assets/html/bubblemap_normal_weather.html"
-           width="1100"
-           height="600"
-           >
+
+<div class="container">
+    <div class="plot">
+        <embed 
+               type="text/html" 
+               src="/assets/html/bubblemap_normal_weather.html"
+               width="550"   
+               height="600"
+               >
+    </div>
+    <div class="plot">
+        <embed 
+               type="text/html" 
+               src="/assets/html/deaths_events_bubblemap_normal_weather.html"
+               width="550"   
+               height="600"
+               >
+    </div>
 </div>
-
-This plot is a good indicator as to where one should be extra careful, or perhaps, where law enforcement should examine possible changes to counter the higher number of events. 
 
 <br>
 
@@ -134,16 +145,9 @@ To get a more specific look at the happenings, the following plot displays the a
            >
 </div>
 
-These happenins vary from minor bumps to deadly accidents. Naturally, the main focus should be to prevent deadly accidents. The plot below, displays a bubble-plot of places where deadly accidents have occured. 
 
-<div style="display: flex; justify-content: center;">
-    <embed 
-           type="text/html" 
-           src="/assets/html/deaths_events_bubblemap_normal_weather.html"
-           width="1300"
-           height="600"
-           >
-</div>
+
+
 
 
  <header>
@@ -153,27 +157,29 @@ These happenins vary from minor bumps to deadly accidents. Naturally, the main f
 
  {% include carousel.html height="50" unit="%" duration="7" number="3" %}
 
-  * Rain
-
-<div style="display: flex; justify-content: center;">
-    <embed 
-           type="text/html" 
-           src="/assets/html/bubblemap_rain.html"
-           width="1100"
-           height="600"
-           >
-</div>
 
 Much simpler due to fewer instances.
 
-<div style="display: flex; justify-content: center;">
-    <embed 
-           type="text/html" 
-           src="/assets/html/deaths_events_bubblemap_rain.html"
-           width="1300"
-           height="600"
-           >
+
+<div class="container">
+    <div class="plot">
+        <embed 
+               type="text/html" 
+               src="/assets/html/bubblemap_rain.html"
+               width="550"   
+               height="600"
+               >
+    </div>
+    <div class="plot">
+        <embed 
+               type="text/html" 
+               src="/assets/html/deaths_events_bubblemap_rain.html"
+               width="550"   
+               height="600"
+               >
+    </div>
 </div>
+
 
 <div style="display: flex; justify-content: center;">
     <embed 
@@ -184,86 +190,12 @@ Much simpler due to fewer instances.
            >
 </div>
 
-
- <header>
-        <h1>Weather Type: Snow</h1>
- </header>
-
- {% include carousel.html height="50" unit="%" duration="7" number="4" %}
-
-
-<div class="container">
-    <div class="plot">
-        <embed 
-               type="text/html" 
-               src="/assets/html/bubblemap_snow.html"
-               width="550"   
-               height="600"
-               >
-    </div>
-    <div class="plot">
-        <embed 
-               type="text/html" 
-               src="/assets/html/deaths_events_bubblemap_snow.html"
-               width="550"   
-               height="600"
-               >
-    </div>
-</div>
-
-
-<div style="display: flex; justify-content: center;">
-    <embed 
-           type="text/html" 
-           src="/assets/html/Snow_Present_map.html"
-           width="1100"
-           height="600"
-           >
-</div>
 
 <header>
-        <h1>Weather Type: Vision obstruction</h1>
- </header>
-
-{% include carousel.html height="50" unit="%" duration="7" number="5" %}
-
-  * Rain
-
-<div style="display: flex; justify-content: center;">
-    <embed 
-           type="text/html" 
-           src="/assets/html/bubblemap_rain.html"
-           width="1100"
-           height="600"
-           >
-</div>
-
-Much simpler due to fewer instances.
-
-<div style="display: flex; justify-content: center;">
-    <embed 
-           type="text/html" 
-           src="/assets/html/deaths_events_bubblemap_rain.html"
-           width="1300"
-           height="600"
-           >
-</div>
-
-<div style="display: flex; justify-content: center;">
-    <embed 
-           type="text/html" 
-           src="/assets/html/Rain_Present_map.html"
-           width="1300"
-           height="600"
-           >
-</div>
-
-
- <header>
         <h1>Weather Type: Snow</h1>
  </header>
 
- {% include carousel.html height="50" unit="%" duration="7" number="4" %}
+{% include carousel.html height="50" unit="%" duration="7" number="4" %}
 
 
 <div class="container">
@@ -290,6 +222,43 @@ Much simpler due to fewer instances.
     <embed 
            type="text/html" 
            src="/assets/html/Snow_Present_map.html"
+           width="1300"
+           height="600"
+           >
+</div>
+
+
+ <header>
+        <h1>Weather Type: Vision Obstruction</h1>
+ </header>
+
+ {% include carousel.html height="50" unit="%" duration="7" number="5" %}
+
+
+<div class="container">
+    <div class="plot">
+        <embed 
+               type="text/html" 
+               src="/assets/html/bubblemap_vision_obscuration.html"
+               width="550"   
+               height="600"
+               >
+    </div>
+    <div class="plot">
+        <embed 
+               type="text/html" 
+               src="/assets/html/deaths_events_bubblemap_vision_obstruction.html"
+               width="550"   
+               height="600"
+               >
+    </div>
+</div>
+
+
+<div style="display: flex; justify-content: center;">
+    <embed 
+           type="text/html" 
+           src="/assets/html/map_Vision_Obstruction_Present.html"
            width="1100"
            height="600"
            >
@@ -301,6 +270,8 @@ Much simpler due to fewer instances.
 <br>
 <br>
 
+
+#### Comparing weather phenomena affect on collisions
 
 
 #### Bubblemap of all collisions in different conditions (Rain, snow etc.) 
@@ -308,78 +279,16 @@ Much simpler due to fewer instances.
 **This is a bubble map showing car accidents in new york city:** Note that the size and color changes based on the frequency of crashes at certain locations. 
 
 
-
-<div style="display: flex; justify-content: center;">
-    <embed 
-           type="text/html" 
-           src="/assets/html/bubblemap_normal_weather.html"
-           width="1100"
-           height="600"
-           >
-</div>
-
- * Snow
-
-
-
- * Vision Obscuration
-<div style="display: flex; justify-content: center;">
-    <embed 
-           type="text/html" 
-           src="/assets/html/bubblemap_vision_obscuration.html"
-           width="1100"
-           height="600"
-           >
-</div>
+<br>
+<br>
+<br>
 
 
 #### Heatemap of all collisions in different conditions (Rain, snow etc.) 
 
 **This is a heatmap showing the density of crashes:** It is very important to note that the amount of crashes at one location has no impact on this visualization. It can purely be used to show the places where crashes are most dense. It makes sense that manhatten is a hotspot, since it is more densely packed with both people and crossings where accidents might happen.
 
- * Normal Weather
 
-<div style="display: flex; justify-content: center;">
-    <embed 
-           type="text/html" 
-           src="/assets/html/heatmap_normal_weather.html"
-           width="1100"
-           height="600"
-           >
-</div>
-
-
- * Rain
-
-<div style="display: flex; justify-content: center;">
-    <embed 
-           type="text/html" 
-           src="/assets/html/heatmap_rain_present.html"
-           width="1100"
-           height="600"
-           >
-</div>
-
- * Snow
-
-<div style="display: flex; justify-content: center;">
-    <embed 
-           type="text/html" 
-           src="/assets/html/heatmap_snow_present.html"
-           width="1100"
-           height="600"
-           >
-</div>
-
- * Vision Obscuration
-<div style="display: flex; justify-content: center;">
-    <embed 
-           type="text/html" 
-           src="/assets/html/heatmap_vision_obstruction_present.html"
-           width="1100"
-           height="600"
-           >
-</div>
 
 
 {% include image-gallery.html folder="/uploads/album" %}
