@@ -18,6 +18,11 @@ carousels:
     - image:  /assets/images/MonthlyRain.png
     - image:  /assets/images/WeeklyRain.png
     - image:  /assets/images/HourlyRain.png
+  - images: 
+    - image:  /assets/images/YearlyRain.png
+    - image:  /assets/images/MonthlyRain.png
+    - image:  /assets/images/WeeklyRain.png
+    - image:  /assets/images/HourlyRain.png  
 ---  
 ---
 
@@ -162,7 +167,15 @@ Much simpler due to fewer instances.
 </div>
 
 
+ <header>
+        <h1>Weather Type: Snow</h1>
+ </header>
 
+ {% include carousel.html height="50" unit="%" duration="7" number="4" %}
+
+
+
+ 
 <br>
 <br>
 <br>
