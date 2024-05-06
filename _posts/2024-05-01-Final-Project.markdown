@@ -73,6 +73,18 @@ First, the 'Normal Weather' category is examined. Naturally, there are a much hi
 
   {% include carousel.html height="50" unit="%" duration="7" number="2" %}
 
+ * Normal Weather most frequent 
+
+<div style="display: flex; justify-content: center;">
+    <embed 
+           type="text/html" 
+           src="/assets/html/Normal_Weather_map.html"
+           width="1100"
+           height="600"
+           >
+</div>
+
+
  * Normal Weather happenings
 
 <div style="display: flex; justify-content: center;">
@@ -84,16 +96,7 @@ First, the 'Normal Weather' category is examined. Naturally, there are a much hi
            >
 </div>
 
- * Normal Weather most frequent 
 
-<div style="display: flex; justify-content: center;">
-    <embed 
-           type="text/html" 
-           src="/assets/html/Normal_Weather_map.html"
-           width="1100"
-           height="600"
-           >
-</div>
 
 
 
