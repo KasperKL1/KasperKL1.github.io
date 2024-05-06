@@ -40,6 +40,9 @@ To get a more detailed look, the weekly data has been divided, so hourly data is
            >
 </div>
 
+The same can be done on a yearly basis. Use the Legend to isolate the year(s) you wish to examine. Interesitng patterns to examine here, could be the rise of COVID in 2020, that sees a clear drop in accidents. But overall, there does not seem to be a clear apparent pattern in the montly data. 
+
+
 <div style="display: flex; justify-content: center;">
     <embed 
            type="text/html" 
@@ -48,6 +51,26 @@ To get a more detailed look, the weekly data has been divided, so hourly data is
            height="600"
            >
 </div>
+
+This initial data exploration does not provide much insight. Some logical daily and weekly trends are apparent, but hte reasoning for these can only be guessed at. The next sections of this website will attempt to model the data with corresponding weather data, to examine if there are apaprent correlatations in accidents in NYC, and the weather of NYC. 
+
+<br>
+
+The website will explore three different types of weather data; Normal Weather, Rainy, and Snowy. 'Normal Weather' simply means that there are no current weather conditions that might impair driving ability. So, a cloudy hour and a sunny hour will both be considered 'Normal Weather'. 
+
+ <header>
+        <h1>Weather Type: Normal Weather</h1>
+ </header>
+
+
+
+
+
+
+
+
+
+
 
 
 ### HeatMap of all collisions in different conditions (Rain, snow etc.) 
