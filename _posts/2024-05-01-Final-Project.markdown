@@ -65,10 +65,41 @@ The website will explore three different types of weather data; <strong>Normal W
 First, the 'Normal Weather' category is examined. Naturally, there are a much higher number of accidents for this weather type, as it is usually not raining or snowing. This will be taken into account when the data is compared, but first, some simple exploration.
 
 
+ * Normal Weather happenings
+
+<div style="display: flex; justify-content: center;">
+    <embed 
+           type="text/html" 
+           src="/assets/html/bubblemap_normal_weather.html"
+           width="1100"
+           height="600"
+           >
+</div>
+
+ * Normal Weather most frequent 
+
+<div style="display: flex; justify-content: center;">
+    <embed 
+           type="text/html" 
+           src="/assets/html/Normal_Weather_map.html"
+           width="1100"
+           height="600"
+           >
+</div>
 
 
 
 
+ * Normal Weather deaths
+
+<div style="display: flex; justify-content: center;">
+    <embed 
+           type="text/html" 
+           src="/assets/html/deaths_events_normal_weather_heatmap.html"
+           width="1300"
+           height="600"
+           >
+</div>
 
 
 <br>
@@ -81,7 +112,7 @@ First, the 'Normal Weather' category is examined. Naturally, there are a much hi
 
 **This is a bubble map showing car accidents in new york city:** Note that the size and color changes based on the frequency of crashes at certain locations. 
 
- * Normal Weather
+
 
 <div style="display: flex; justify-content: center;">
     <embed 
