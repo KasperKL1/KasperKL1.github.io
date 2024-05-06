@@ -212,7 +212,7 @@ These happenins vary from minor bumps to deadly accidents. Naturally, the main f
 <div style="display: flex; justify-content: center;">
     <embed 
            type="text/html" 
-           src="/assets/html/heatmap_vision_obscuration_present.html"
+           src="/assets/html/heatmap_vision_obstruction_present.html"
            width="1100"
            height="600"
            >
