@@ -77,7 +77,7 @@ Since normal weather is a year round occurence, and by far the most normal weath
 
 <br>
 
-Now let's look at the areas in which the occurences are happening. The follwing is a biblle-plot, where the bubble size and color indicates the number of reported accidents for each area. 
+Now let's look at the areas in which the occurences are happening. The follwing is a bubble-plot, where the bubble size and color indicates the number of reported accidents for each area. 
 
 <div style="display: flex; justify-content: center;">
     <embed 
@@ -104,11 +104,7 @@ To get a more specific look at the happenings, the following plot displays the a
            >
 </div>
 
-
-
-
-
- * Normal Weather deaths
+These happenins vary from minor bumps to deadly accidents. Naturally, the main focus should be to prevent deadly accidents. The plot below, displays a bubble-plot of places where deadly accidents have occured. 
 
 <div style="display: flex; justify-content: center;">
     <embed 
