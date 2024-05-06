@@ -152,6 +152,15 @@ First, the 'Normal Weather' category is examined. Naturally, there are a much hi
            >
 </div>
 
+ * Vision Obscuration
+<div style="display: flex; justify-content: center;">
+    <embed 
+           type="text/html" 
+           src="/assets/html/bubblemap_vision_obscuration.html"
+           width="1100"
+           height="600"
+           >
+</div>
 
 
 #### Heatemap of all collisions in different conditions (Rain, snow etc.) 
@@ -192,7 +201,15 @@ First, the 'Normal Weather' category is examined. Naturally, there are a much hi
            >
 </div>
 
-
+ * Vision Obscuration
+<div style="display: flex; justify-content: center;">
+    <embed 
+           type="text/html" 
+           src="/assets/html/heatmap_vision_obscuration_present.html"
+           width="1100"
+           height="600"
+           >
+</div>
 
 
 
