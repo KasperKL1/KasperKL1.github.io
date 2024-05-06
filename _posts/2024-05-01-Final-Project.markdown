@@ -28,21 +28,50 @@ carousels:
     - image:  /assets/images/MonthlyVO.png
     - image:  /assets/images/WeeklyVO.png
     - image:  /assets/images/HourlyVO.png    
----  
 ---
-
 <style>
-  .container {
-    display: flex;        /* Flexbox layout to align children side by side */
-    justify-content: center; /* Center the plots horizontally */
-    align-items: center;  /* Align the plots vertically */
-    gap: 20px;            /* Space between the plots */
-  }
-  .plot {
-    border: 1px solid #ccc; /* Optional border for better visibility */
-    padding: 10px;
-  }
+       .tab {
+       background-color: #f1f1f1;
+       border: none;
+       color: black;
+       padding: 10px 24px;
+       text-align: center;
+       text-decoration: none;
+       display: inline-block;
+       font-size: 16px;
+       margin: 4px 2px;
+       transition-duration: 0.4s;
+       cursor: pointer;
+       }
+
+       .tab:hover {
+       background-color: #555555;
+       color: white;
+       }
+
+       .tab.active {
+       background-color: #555555;
+       color: white;
+       }
+
+       .button-container {
+       display: flex;
+       justify-content: center;
+       margin-bottom: 20px;
+       }
+
+       .container {
+       display: flex;        /* Flexbox layout to align children side by side */
+       justify-content: center; /* Center the plots horizontally */
+       align-items: center;  /* Align the plots vertically */
+       gap: 20px;            /* Space between the plots */
+       }
+       .plot {
+       border: 1px solid #ccc; /* Optional border for better visibility */
+       padding: 10px;
+       }
 </style>
+
 
 
 
@@ -98,6 +127,111 @@ The website will explore three different types of weather data; <strong>Normal W
  <header>
         <h1>Weather Type: Normal Weather</h1>
  </header>
+
+
+
+#### Bubblemap of all collisions in different conditions (Rain, snow etc.) 
+
+**This is a bubble map showing car accidents in new york city:** Note that the size and color changes based on the frequency of crashes at certain locations. 
+
+<div class="button-container">
+  <button class="tab" onclick="openMap(event, 'bubblemap_normal_weather', '/assets/html/bubblemap_normal_weather.html')">Normal Weather</button>
+  <button class="tab" onclick="openMap(event, 'bubblemap_vision_obscuration', '/assets/html/bubblemap_vision_obscuration.html')">Fog/Mist/Haze</button>
+  <button class="tab" onclick="openMap(event, 'bubblemap_rain', '/assets/html/bubblemap_rain.html')">Rain</button>
+  <button class="tab" onclick="openMap(event, 'bubblemap_snow', '/assets/html/bubblemap_snow.html')">Snow</button>
+</div>
+
+<div id="bubblemap_normal_weather" class="map">
+  <embed type="text/html" src="/assets/html/bubblemap_normal_weather.html" width="800" height="650">
+</div>
+<div id="bubblemap_rain" class="map" style="display: none;">
+  <embed type="text/html" src="/assets/html/bubblemap_rain.html" width="800" height="650">
+</div>
+<div id="bubblemap_snow" class="map" style="display: none;">
+  <embed type="text/html" src="/assets/html/bubblemap_snow.html" width="800" height="650">
+</div>
+<div id="bubblemap_vision_obscuration" class="map" style="display: none;">
+  <embed type="text/html" src="/assets/html/bubblemap_snow.html" width="800" height="650">
+</div>
+
+<br>
+
+#### Heatmap of all collisions in different conditions (Rain, snow etc.) 
+
+**This is a heatmap showing the density of crashes:** It is very important to note that the amount of crashes at one location has no impact on this visualization. It can purely be used to show the places where crashes are most dense. It makes sense that manhatten is a hotspot, since it is more densely packed with both people and crossings where accidents might happen.
+
+
+
+<div class="button-container">
+  <button class="tab" onclick="openMap(event, 'heatmap_normal_weather', '/assets/html/heatmap_normal_weather.html')">Normal Weather</button>
+  <button class="tab" onclick="openMap(event, 'heatmap_vision_obstruction_present', '/assets/html/heatmap_vision_obstruction_present.html')">Fog/Mist/Haze</button>
+  <button class="tab" onclick="openMap(event, 'heatmap_rain_present', '/assets/html/heatmap_rain_present.html')">Rain</button>
+  <button class="tab" onclick="openMap(event, 'heatmap_snow_present', '/assets/html/heatmap_snow_present.html')">Snow</button>
+</div>
+
+<div id="heatmap_normal_weather" class="map">
+  <embed type="text/html" width="800" height="650">
+</div>
+<div id="heatmap_rain_present" class="map" style="display: none;">
+  <embed type="text/html" width="800" height="650">
+</div>
+<div id="heatmap_snow_present" class="map" style="display: none;">
+  <embed type="text/html" width="800" height="650">
+</div>
+<div id="heatmap_vision_obstruction_present" class="map" style="display: none;">
+  <embed type="text/html" width="800" height="650">
+</div>
+
+<br>
+
+#### Number of collisions at same location that resulted in at least 1 fatality
+
+<div class="button-container">
+  <button class="tab" onclick="openMap(event, 'deaths_events_bubblemap_normal_weather', '/assets/html/deaths_events_bubblemap_normal_weather.html')">Normal Weather</button>
+  <button class="tab" onclick="openMap(event, 'deaths_events_bubblemap_vision_obstruction', '/assets/html/deaths_events_bubblemap_vision_obstruction.html')">Fog/Mist/Haze</button>
+  <button class="tab" onclick="openMap(event, 'deaths_events_bubblemap_rain', '/assets/html/deaths_events_bubblemap_rain.html')">Rain</button>
+  <button class="tab" onclick="openMap(event, 'deaths_events_bubblemap_snow', '/assets/html/deaths_events_bubblemap_snow.html')">Snow</button>
+</div>
+
+<div id="deaths_events_bubblemap_normal_weather" class="map">
+  <embed type="text/html" width="800" height="650">
+</div>
+<div id="deaths_events_bubblemap_rain" class="map" style="display: none;">
+  <embed type="text/html" width="800" height="650">
+</div>
+<div id="deaths_events_bubblemap_snow" class="map" style="display: none;">
+  <embed type="text/html" width="800" height="650">
+</div>
+<div id="deaths_events_bubblemap_vision_obstruction" class="map" style="display: none;">
+  <embed type="text/html" width="800" height="650">
+</div>
+
+<br>
+
+#### Number of collisions at same location that resulted in at least 1 injury
+
+<div class="button-container">
+  <button class="tab" onclick="openMap(event, 'injury_events_bubblemap_normal_weather', '/assets/html/injury_events_bubblemap_normal_weather.html')">Normal Weather</button>
+  <button class="tab" onclick="openMap(event, 'injury_events_bubblemap_vision_obstruction', '/assets/html/injury_events_bubblemap_vision_obstruction.html')">Fog/Mist/Haze</button>
+  <button class="tab" onclick="openMap(event, 'injury_events_bubblemap_rain', '/assets/html/injury_events_bubblemap_rain.html')">Rain</button>
+  <button class="tab" onclick="openMap(event, 'injury_events_bubblemap_snow', '/assets/html/injury_events_bubblemap_snow.html')">Snow</button>
+</div>
+
+<div id="injury_events_bubblemap_normal_weather" class="map">
+  <embed type="text/html" width="800" height="650">
+</div>
+<div id="injury_events_bubblemap_rain" class="map" style="display: none;">
+  <embed type="text/html" width="800" height="650">
+</div>
+<div id="injury_events_bubblemap_snow" class="map" style="display: none;">
+  <embed type="text/html" width="800" height="650">
+</div>
+<div id="injury_events_bubblemap_vision_obstruction" class="map" style="display: none;">
+  <embed type="text/html" width="800" height="650">
+</div>
+
+
+<br>
 
 First, the 'Normal Weather' category is examined. Naturally, there are a much higher number of accidents for this weather type, as it is usually not raining or snowing. This will be taken into account when the data is compared, but first, some simple exploration.
 
@@ -294,23 +428,22 @@ Much simpler due to fewer instances.
 
 
 
-#### Bubblemap of all collisions in different conditions (Rain, snow etc.) 
-
-**This is a bubble map showing car accidents in new york city:** Note that the size and color changes based on the frequency of crashes at certain locations. 
 
 
-<br>
-<br>
-<br>
-
-
-#### Heatemap of all collisions in different conditions (Rain, snow etc.) 
-
-**This is a heatmap showing the density of crashes:** It is very important to note that the amount of crashes at one location has no impact on this visualization. It can purely be used to show the places where crashes are most dense. It makes sense that manhatten is a hotspot, since it is more densely packed with both people and crossings where accidents might happen.
-
-
-
-
-{% include image-gallery.html folder="/uploads/album" %}
-
-
+<script>
+function openMap(evt, mapName, mapSrc) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("map");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+    tabcontent[i].innerHTML = '';
+  }
+  tablinks = document.getElementsByClassName("tab");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(mapName).style.display = "block";
+  document.getElementById(mapName).innerHTML = '<embed type="text/html" src="' + mapSrc + '" width="800" height="650">';
+  evt.currentTarget.className += " active";
+}
+</script>
