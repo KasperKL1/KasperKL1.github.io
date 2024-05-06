@@ -56,12 +56,13 @@ This initial data exploration does not provide much insight. Some logical daily 
 
 <br>
 
-The website will explore three different types of weather data; Normal Weather, Rainy, and Snowy. 'Normal Weather' simply means that there are no current weather conditions that might impair driving ability. So, a cloudy hour and a sunny hour will both be considered 'Normal Weather'. 
+The website will explore three different types of weather data; <strong>Normal Weather</strong>, <strong>Rainy</strong>, and <strong>Snowy</strong>. 'Normal Weather' simply means that there are no current weather conditions that might impair driving ability. So, a cloudy hour and a sunny hour will both be considered 'Normal Weather'. 
 
  <header>
         <h1>Weather Type: Normal Weather</h1>
  </header>
 
+First, the 'Normal Weather' category is examined. Naturally, there are a much higher number of accidents for this weather type, as it is usually not raining or snowing. This will be taken into account when the data is compared, but first, some simple exploration.
 
 
 
@@ -70,6 +71,9 @@ The website will explore three different types of weather data; Normal Weather, 
 
 
 
+<br>
+<br>
+<br>
 
 
 
