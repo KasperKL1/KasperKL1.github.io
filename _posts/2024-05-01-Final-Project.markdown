@@ -9,7 +9,7 @@ carousels:
     - image:  /assets/images/Weekday.png
     - image:  /assets/images/Hour.png
   - images: 
-    - image:  /assets/images/YearNormal.png
+    - image:  /assets/images/YearlyNormal.png
     - image:  /assets/images/MonthlyNormal.png
     - image:  /assets/images/WeeklyNormal.png
     - image:  /assets/images/HourlyNormal.png
@@ -141,12 +141,21 @@ These happenins vary from minor bumps to deadly accidents. Naturally, the main f
            >
 </div>
 
-
+Much simpler due to fewer instances.
 
 <div style="display: flex; justify-content: center;">
     <embed 
            type="text/html" 
            src="/assets/html/deaths_events_bubblemap_rain.html"
+           width="1300"
+           height="600"
+           >
+</div>
+
+<div style="display: flex; justify-content: center;">
+    <embed 
+           type="text/html" 
+           src="/assets/html/Rain_Present_map.html"
            width="1300"
            height="600"
            >
