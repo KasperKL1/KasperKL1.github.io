@@ -8,6 +8,11 @@ carousels:
     - image:  /assets/images/Month.png
     - image:  /assets/images/Weekday.png
     - image:  /assets/images/Hour.png
+  - images: 
+    - image:  /assets/images/Year.png
+    - image:  /assets/images/Month.png
+    - image:  /assets/images/Weekday.png
+    - image:  /assets/images/Hour.png
 ---
 
 
@@ -22,6 +27,8 @@ First, some initial vizualization. Use the arrows to view the 4 different plots,
 <br>
 
   {% include carousel.html height="50" unit="%" duration="7" number="1" %}
+
+  {% include carousel.html height="50" unit="%" duration="7" number="2" %}
 
 <br>
 
@@ -168,7 +175,7 @@ First, the 'Normal Weather' category is examined. Naturally, there are a much hi
 <div style="display: flex; justify-content: center;">
     <embed 
            type="text/html" 
-           src="/assets/html/heatmap_snow_present.html"
+           src="/assets/html/heatmap_rain_present.html"
            width="1100"
            height="600"
            >
