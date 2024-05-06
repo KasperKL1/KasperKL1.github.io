@@ -352,16 +352,6 @@ Much simpler due to fewer instances.
 </div>
 
 
-<div style="display: flex; justify-content: center;">
-    <embed 
-           type="text/html" 
-           src="/assets/html/Snow_Present_map.html"
-           width="1300"
-           height="600"
-           >
-</div>
-
-
  <header>
         <h1>Weather Type: Vision Obstruction</h1>
  </header>
@@ -425,6 +415,15 @@ Much simpler due to fewer instances.
            >
 </div>
 
+
+<div style="display: flex; justify-content: center;">
+    <embed 
+           type="text/html" 
+           src="/assets/html/proportion_of_persons_killed.html"
+           width="1100"
+           height="600"
+           >
+</div>
 
 
 
