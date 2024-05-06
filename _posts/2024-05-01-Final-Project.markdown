@@ -73,11 +73,78 @@ The website will explore three different types of weather data; Normal Weather, 
 
 
 
-### HeatMap of all collisions in different conditions (Rain, snow etc.) 
+#### Bubblemap of all collisions in different conditions (Rain, snow etc.) 
+
+**This is a bubble map showing car accidents in new york city:** Note that the size and color changes based on the frequency of crashes at certain locations. 
+
+ * Normal Weather
+
 <div style="display: flex; justify-content: center;">
     <embed 
            type="text/html" 
-           src="/assets/html/ny_map.html"
+           src="/assets/html/bubblemap_normal_weather.html"
+           width="1100"
+           height="600"
+           >
+</div>
+
+  * Rain
+
+<div style="display: flex; justify-content: center;">
+    <embed 
+           type="text/html" 
+           src="/assets/html/bubblemap_rain.html"
+           width="1100"
+           height="600"
+           >
+</div>
+
+ * Snow
+
+<div style="display: flex; justify-content: center;">
+    <embed 
+           type="text/html" 
+           src="/assets/html/bubblemap_snow.html"
+           width="1100"
+           height="600"
+           >
+</div>
+
+
+
+#### Heatemap of all collisions in different conditions (Rain, snow etc.) 
+
+**This is a heatmap showing the density of crashes:** It is very important to note that the amount of crashes at one location has no impact on this visualization. It can purely be used to show the places where crashes are most dense. It makes sense that manhatten is a hotspot, since it is more densely packed with both people and crossings where accidents might happen.
+
+ * Normal Weather
+
+<div style="display: flex; justify-content: center;">
+    <embed 
+           type="text/html" 
+           src="/assets/html/Normal_Weather_heatmap.html"
+           width="1100"
+           height="600"
+           >
+</div>
+
+
+ * Rain
+
+<div style="display: flex; justify-content: center;">
+    <embed 
+           type="text/html" 
+           src="/assets/html/Rain_Present_heatmap.html"
+           width="1100"
+           height="600"
+           >
+</div>
+
+ * Snow
+
+<div style="display: flex; justify-content: center;">
+    <embed 
+           type="text/html" 
+           src="/assets/html/Snow_Present_heatmap.html"
            width="1100"
            height="600"
            >
