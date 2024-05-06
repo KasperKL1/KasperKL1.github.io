@@ -9,10 +9,10 @@ carousels:
     - image:  /assets/images/Weekday.png
     - image:  /assets/images/Hour.png
   - images: 
-    - image:  /assets/images/Year.png
-    - image:  /assets/images/Month.png
-    - image:  /assets/images/Weekday.png
-    - image:  /assets/images/Hour.png
+    - image:  /assets/images/YearNormal.png
+    - image:  /assets/images/MonthlyNormal.png
+    - image:  /assets/images/WeeklyNormal.png
+    - image:  /assets/images/HourlyNormal.png
 ---
 
 
@@ -28,7 +28,7 @@ First, some initial vizualization. Use the arrows to view the 4 different plots,
 
   {% include carousel.html height="50" unit="%" duration="7" number="1" %}
 
-  {% include carousel.html height="50" unit="%" duration="7" number="2" %}
+
 
 <br>
 
@@ -71,6 +71,7 @@ The website will explore three different types of weather data; <strong>Normal W
 
 First, the 'Normal Weather' category is examined. Naturally, there are a much higher number of accidents for this weather type, as it is usually not raining or snowing. This will be taken into account when the data is compared, but first, some simple exploration.
 
+  {% include carousel.html height="50" unit="%" duration="7" number="2" %}
 
  * Normal Weather happenings
 
