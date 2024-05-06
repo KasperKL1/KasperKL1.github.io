@@ -9,10 +9,10 @@ carousels:
     - image:  /assets/images/Weekday.png
     - image:  /assets/images/Hour.png
   - images: 
-    - image:  /assets/images/Year.png
-    - image:  /assets/images/Month.png
-    - image:  /assets/images/Weekday.png
-    - image:  /assets/images/Hour.png
+    - image:  /assets/images/YearNormal.png
+    - image:  /assets/images/MonthlyNormal.png
+    - image:  /assets/images/WeeklyNormal.png
+    - image:  /assets/images/HourlyNormal.png
 ---
 
 
@@ -28,7 +28,7 @@ First, some initial vizualization. Use the arrows to view the 4 different plots,
 
   {% include carousel.html height="50" unit="%" duration="7" number="1" %}
 
-  {% include carousel.html height="50" unit="%" duration="7" number="2" %}
+
 
 <br>
 
@@ -59,7 +59,7 @@ The same can be done on a yearly basis. Use the Legend to isolate the year(s) yo
            >
 </div>
 
-This initial data exploration does not provide much insight. Some logical daily and weekly trends are apparent, but hte reasoning for these can only be guessed at. The next sections of this website will attempt to model the data with corresponding weather data, to examine if there are apaprent correlatations in accidents in NYC, and the weather of NYC. 
+This initial data exploration does not provide much insight. Some logical daily and weekly trends are apparent, but hte reasoning for these can only be guessed at. The next sections of this website will attempt to model the data with corresponding weather data, to examine if there are apaprent correlatations in accidents in NYC, and the weather of NYC. First each weather type will be examined individually, followed by a comparison of the different weather types. 
 
 <br>
 
@@ -71,8 +71,13 @@ The website will explore three different types of weather data; <strong>Normal W
 
 First, the 'Normal Weather' category is examined. Naturally, there are a much higher number of accidents for this weather type, as it is usually not raining or snowing. This will be taken into account when the data is compared, but first, some simple exploration.
 
+  {% include carousel.html height="50" unit="%" duration="7" number="2" %}
 
- * Normal Weather happenings
+Since normal weather is a year round occurence, and by far the most normal weather condition, the initial barplots do not vary significantly from those that were presented earlier.  
+
+<br>
+
+Now let's look at the areas in which the occurences are happening. The follwing is a biblle-plot, where the bubble size and color indicates the number of reported accidents for each area. 
 
 <div style="display: flex; justify-content: center;">
     <embed 
@@ -83,7 +88,12 @@ First, the 'Normal Weather' category is examined. Naturally, there are a much hi
            >
 </div>
 
- * Normal Weather most frequent 
+This plot is a good indicator as to where one should be extra careful, or perhaps, where law enforcement should examine possible changes to counter the higher number of events. 
+
+<br>
+
+To get a more specific look at the happenings, the following plot displays the areas with the most occurences. 
+
 
 <div style="display: flex; justify-content: center;">
     <embed 
@@ -93,6 +103,7 @@ First, the 'Normal Weather' category is examined. Naturally, there are a much hi
            height="600"
            >
 </div>
+
 
 
 
