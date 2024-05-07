@@ -157,29 +157,23 @@ Combining the findings in each plot provides some understanding of the trends in
 
 **Rain:** Rain follows the trend of Normal Weather pretty well. There are more injuries in the later hours, but for most hours in the total accidents, Rain actually ranks below normal weather. Fatal crashes is once again difficult to read, as there is relatively very few rows where there are fatalities, but the data once again follows Normal Weather nicely, although Normal Weather is much more smoothed, due to a much higher count of that weather type. 
 
-**Vision obscuration:** 
+**Vision obscuration:** Vision obsscuration provides more accidents later in the day, and results in an upswing in injuries as well. Meaning in the darker hours, the fog will provide a higher risk of accident and injury. 
 
 
-
-
-
-
-
-
-
-
+In addition to happenings, we can also look at the top contributing factors for each weather type. Meaning, the reported reason for the collision. Note, that we have included 'Unspecified', as it is by far the most common input. 
 
 
  {% include carousel.html height="50" unit="%" duration="7" number="6" %}
 
-
+The factors for each type are very much alike. Slippery pavement for Snow is perhaps the biggest outlier, which is of course a natural cause for accidents in snowy weather. The contributing facors do not provide specific insights. 
 
  <header>
         <h1>Bubblemap of all instances</h1>
  </header>
 
+After looking at the comparisons of each weather type, let's look at where the accidents happen. The Bubble-Plot below displays each location where an accident has happend as a bubble, with the size and color of the bubble indicating number of instances per location. Once again, you can use the buttons to choose weather type. 
 
-The first vi
+
  the size and color changes based on the frequency of crashes at certain locations. 
 
 <div class="button-container">
@@ -281,161 +275,19 @@ The first vi
 
 <br>
 
-First, the 'Normal Weather' category is examined. Naturally, there are a much higher number of accidents for this weather type, as it is usually not raining or snowing. This will be taken into account when the data is compared, but first, some simple exploration.
 
   {% include carousel.html height="50" unit="%" duration="7" number="2" %}
 
-Since normal weather is a year round occurence, and by far the most normal weather condition, the initial barplots do not vary significantly from those that were presented earlier.  
-
-<br>
-
-Now let's look at the areas in which the occurences are happening. The follwing is a bubble-plot, where the bubble size and color indicates the number of reported accidents for each area.
-This plot is a good indicator as to where one should be extra careful, or perhaps, where law enforcement should examine possible changes to counter the higher number of events.  
-These happenins vary from minor bumps to deadly accidents. Naturally, the main focus should be to prevent deadly accidents. The plot below, displays a bubble-plot of places where deadly accidents have occured. 
-
-
-<div class="container">
-    <div class="plot">
-        <embed 
-               type="text/html" 
-               src="/assets/html/bubblemap_normal_weather.html"
-               width="550"   
-               height="600"
-               >
-    </div>
-    <div class="plot">
-        <embed 
-               type="text/html" 
-               src="/assets/html/deaths_events_bubblemap_normal_weather.html"
-               width="550"   
-               height="600"
-               >
-    </div>
-</div>
-
-<br>
-
-To get a more specific look at the happenings, the following plot displays the areas with the most occurences. 
-
-
-<div style="display: flex; justify-content: center;">
-    <embed 
-           type="text/html" 
-           src="/assets/html/Normal_Weather_map.html"
-           width="1100"
-           height="600"
-           >
-</div>
-
-
-
-
-
-
- <header>
-        <h1>Weather Type: Rain</h1>
- </header>
 
 
  {% include carousel.html height="50" unit="%" duration="7" number="3" %}
 
 
-Much simpler due to fewer instances.
-
-
-<div class="container">
-    <div class="plot">
-        <embed 
-               type="text/html" 
-               src="/assets/html/bubblemap_rain.html"
-               width="550"   
-               height="600"
-               >
-    </div>
-    <div class="plot">
-        <embed 
-               type="text/html" 
-               src="/assets/html/deaths_events_bubblemap_rain.html"
-               width="550"   
-               height="600"
-               >
-    </div>
-</div>
-
-
-<div style="display: flex; justify-content: center;">
-    <embed 
-           type="text/html" 
-           src="/assets/html/Rain_Present_map.html"
-           width="1300"
-           height="600"
-           >
-</div>
-
-
-<header>
-        <h1>Weather Type: Snow</h1>
- </header>
 
 {% include carousel.html height="50" unit="%" duration="7" number="4" %}
 
 
-<div class="container">
-    <div class="plot">
-        <embed 
-               type="text/html" 
-               src="/assets/html/bubblemap_snow.html"
-               width="550"   
-               height="600"
-               >
-    </div>
-    <div class="plot">
-        <embed 
-               type="text/html" 
-               src="/assets/html/deaths_events_bubblemap_snow.html"
-               width="550"   
-               height="600"
-               >
-    </div>
-</div>
-
-
- <header>
-        <h1>Weather Type: Vision Obstruction</h1>
- </header>
-
  {% include carousel.html height="50" unit="%" duration="7" number="5" %}
-
-
-<div class="container">
-    <div class="plot">
-        <embed 
-               type="text/html" 
-               src="/assets/html/bubblemap_vision_obscuration.html"
-               width="550"   
-               height="600"
-               >
-    </div>
-    <div class="plot">
-        <embed 
-               type="text/html" 
-               src="/assets/html/deaths_events_bubblemap_vision_obstruction.html"
-               width="550"   
-               height="600"
-               >
-    </div>
-</div>
-
-
-<div style="display: flex; justify-content: center;">
-    <embed 
-           type="text/html" 
-           src="/assets/html/map_Vision_Obstruction_Present.html"
-           width="1100"
-           height="600"
-           >
-</div>
-
 
 
 <br>
