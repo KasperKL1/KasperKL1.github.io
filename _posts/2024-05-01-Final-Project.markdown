@@ -277,7 +277,7 @@ The plot is most useful in 'Normal Weather' as the sample size simply is not ver
         <h1>Most dangerous locations</h1>
  </header>
 
-Now that the data has been mapped, let's look at some specific locations, that according to the data, are the most dangerous for each weather type. The plot below displays a map of NYC, with markers for the top five locations for each weather type. You can click each marker for a description of: Weather Type and where that marker ranks in the top five locations. Notice that some locations are the same for multiple weather types. You can click each marker, and they will display all the markers located at that location. 
+Now that the data has been mapped, let's look at some specific locations, that according to the data, are the most dangerous for each weather type. The plot below displays a map of NYC, with markers for the top five locations for each weather type. You can click each marker for a description of: Weather Type, where that marker ranks in the top five locations, and the count of instances. Notice that some locations are the same for multiple weather types. You can click each marker, and they will display all the markers located at that location. 
 
 <div style="display: flex; justify-content: center;">
     <embed 
