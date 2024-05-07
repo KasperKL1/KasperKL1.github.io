@@ -150,9 +150,9 @@ Combining the findings in each plot provides some understanding of the trends in
 
 **Normal Weather:** Normal Weather functions as a baseline throughout this webpage. This data basically provides insight into how the data acts, when weather is not a factor. 
 
-**Snow:** For 'All Instances', all weather types generally follows the same pattern. Snow appears to be the biggest outlier in the morning rush hours, meaning that when people are rushing to work, the slippery roads creates more accidents. Interestingly, these peak in instances do not result in a peak in instances with injuries, and later in the day, when the number of Snow instances are pretty much the same as the other weather types, there are fewer injuries than for the other weather types. This could indicate, that the accidents in snowy weather are less severe, probably due to lower speeds. There is quite a relative peak for fatal injuries, seeing that in the nighttime there is a higher chance of being killed in snowy weather than the other. The numbers are very low for this section however, so it is difficult to provide a definite result. 
+**Snow:** For 'All Instances', all weather types generally follows the same pattern. Snow appears to be the biggest outlier in the morning rush hours, meaning that when people are rushing to work, the slippery roads creates more accidents. Interestingly, these peak in instances do not result in a peak in instances with injuries, and later in the day, when the number of Snow instances are pretty much the same as the other weather types, there are fewer injuries than for the other weather types. This could indicate, that the accidents in snowy weather are less severe, probably due to lower speeds. There is quite a relative peak for fatal injuries, seeing that in the nighttime there is a higher chance of being killed in snowy weather than the other types. The numbers are very low for this section however, so it is difficult to provide a definite result. 
 
-**Rain:** Rain follows the trend of Normal Weather pretty well. There are more injuries in the later hours, but for most hours in the total accidents, Rain actually ranks below normal weather. Fatal crashes is once again difficult to read, as there is relatively very few rows where there are fatalities, but the data once again follows Normal Weather nicely, although Normal Weather is much more smoothed, due to a much higher count of that weather type. 
+**Rain:** Rain follows the trend of Normal Weather pretty well. There are more injuries in the later hours, but for most hours in the total accidents, rain actually ranks below normal weather. Fatal crashes is once again difficult to read, as there is relatively very few rows where there are fatalities, but the data once again follows Normal Weather nicely, although Normal Weather is much more smoothed, due to a much higher count of that weather type. 
 
 **Vision obscuration:** Vision obsscuration provides more accidents later in the day, and results in an upswing in injuries as well. Meaning in the darker hours, the fog will provide a higher risk of accident and injury. 
 
@@ -162,7 +162,7 @@ In addition to happenings, we can also look at the top contributing factors for 
 
  {% include carousel.html height="50" unit="%" duration="7" number="6" %}
 
-The factors for each type are very much alike. Slippery pavement for Snow is perhaps the biggest outlier, which is of course a natural cause for accidents in snowy weather. The contributing facors do not provide specific insights. 
+The factors for each type are very much alike. Slippery pavement for Snow is perhaps the biggest outlier, which is of course a natural cause for accidents in snowy weather. 
 
  <header>
         <h1>Bubblemap of all instances</h1>
@@ -190,13 +190,13 @@ After looking at the comparisons of each weather type, let's look at where the a
   <embed type="text/html" src="/assets/html/bubblemap_snow.html" width="800" height="650">
 </div>
 
-This plot is useful to identify specific spaces in the city, where you might want to be extra careful when manourvering in the different types of weather. It might also be relevant in identifying places in the city, where risk is apparent due to, perhaps, some unsafe traffic constellation. As there is a big difference in number of hours for each weather type, there is also a big differnece in instances. Notice therefor the legend to the right of each plot, indicating the number that each bubble represents. Looking at the vizualizations, the locations are very similar for each weather type. The busy intersections, are the leading culprite for all weather types. 
+This plot is useful to identify specific spaces in the city, where you might want to be extra careful when manourvering in the different types of weather. It might also be relevant in identifying places in the city, where risk is apparent due to, perhaps, some unsafe traffic constellation. As there is a big difference in number of hours for each weather type, there is also a big differnece in instances. Notice therefor the legend to the right of each plot, indicating the number that each bubble represents. Looking at the vizualizations, the locations are very similar for each weather type. The busy intersections, are the leading culprits for all weather types. 
 
 <br>
 
 #### Heatmap of all collisions in different conditions (Rain, snow etc.) 
 
-This is a **heatmap** displays the density of crashes. This gives an indication of the areas where the accidents occur. It is very important to note that the amount of crashes at one location has no impact on this visualization, like it did in the Bubble-plot. It can purely be used to show the places where crashes are most dense. It makes sense that Manhatten is a hotspot, as it is more densely packed with both people and crossings where accidents might happen.
+This **heatmap** displays the density of crashes. This gives an indication of the areas where the accidents occur. It is very important to note that the amount of crashes at one location has no impact on this visualization, like it did in the Bubble-plot. It can purely be used to show the places where crashes are most dense. It makes sense that Manhatten is a hotspot, as it is more densely packed with both people and crossings, where accidents tend to happen. As with the bubble-plot, you can hover your mouse over areas from which you wish to see more details from. 
 
 <div class="button-container">
   <button class="tab" onclick="openMap(event, 'heatmap_normal_weather', '/assets/html/heatmap_normal_weather.html')">Normal Weather</button>
@@ -223,7 +223,7 @@ Once again, the plots displays the same trends, regardless of weather.
 
 #### Number of collisions at same location that resulted in at least 1 injury
 
-Now let's look at where the instances happen, that results in one or more injuries. Once again, you can use the buttons to display the map for each weather type. The map is a Bubble-plot, with the same functions as earlier. 
+Now let's look at where the instances happen, which results in one or more injuries. Once again, you can use the buttons to display the map for each weather type. The maps are Bubble-plots, with the same functions as earlier. 
 
 <div class="button-container">
   <button class="tab" onclick="openMap(event, 'injury_events_bubblemap_normal_weather', '/assets/html/injury_events_bubblemap_normal_weather.html')">Normal Weather</button>
@@ -245,11 +245,11 @@ Now let's look at where the instances happen, that results in one or more injuri
   <embed type="text/html" width="800" height="650">
 </div>
 
-For normal weather, the plot displays some areas with a more dense bubble-population than the previous bubble plot, in the southeast and the north of the plot. This indicates, that there are areas where less accidents happen, but these accidents are more likely to result in injury. These maps are once again useful, to look at specific location and identify, where there might be room for improvement. An example is the large red dot on the Verrazano Bridge during Fog/Mist/Haze. This indicates, that for this location, there is a real risk factor during foggy weather, and the accidents that happen are severe enough to result in injuries. 
+For normal weather, the plot displays some areas with a more dense bubble-population than the previous bubble plot, in the southeast and the north of the plot. This indicates, that there are areas where less accidents happen, but these accidents are more likely to result in injury. These maps are once again useful, to look at specific location and identify, where there might be room for improvement in terms of traffic safety. An example could be the large red bubble on the Verrazano Bridge during Fog/Mist/Haze. This indicates, that for this location, there is a real risk factor during foggy weather, and the accidents that happen are severe enough to result in injuries. 
 
 #### Number of collisions at same location that resulted in at least 1 fatality
 
-Now that we've looked at instances and injuries, this bubble-map displays the places where fatalities happen. Fatalities are, relatively rare, and the larger bubbles are typically stand alone instances where multiple people have died. 
+Now that we've looked at instances and injuries, this bubble-map displays the places where fatalities happen. Fatalities are relatively rare, and the larger bubbles are typically standalone instances, where multiple people have died. 
 
 <div class="button-container">
   <button class="tab" onclick="openMap(event, 'deaths_events_bubblemap_normal_weather', '/assets/html/deaths_events_bubblemap_normal_weather.html')">Normal Weather</button>
@@ -309,12 +309,7 @@ The same plot is displayed below, but only taking into account the accidents tha
         <h1>Final Thoughts</h1>
  </header>
 
-The initial idea of this website was to locate specific details that we were able to explore. However, there were not clear correlations, that we thought were worth exploring. Therefore, the main idea of the webpage is to explore the dataset, and be able to see how dangerous specific locations in NYC are, related to each other, and related to weather. The next step in this webpage, could be to closely examine the specific locations, such as, for eaxmple, the aformentiond Verrazano Bridge. Here it could be examined, why it could be that this location is so high risk for injury, during foggy weather. 
-
-
-
-
-
+The initial idea of this website was to locate specific details that we were able to explore. However, there were not clear correlations, that we thought were worth exploring. Therefore, the main idea of the webpage is to explore the dataset, and be able to see how dangerous specific locations in NYC are, related to each other, and related to weather. The next step in this webpage, could be to closely examine the specific locations, such as, for example, the aformentiond Verrazano Bridge. Here it could be examined, why it could be, that this location is so high risk for injury, during foggy weather. 
 
 
 <script>
