@@ -171,10 +171,7 @@ The factors for each type are very much alike. Slippery pavement for Snow is per
         <h1>Bubblemap of all instances</h1>
  </header>
 
-After looking at the comparisons of each weather type, let's look at where the accidents happen. The Bubble-Plot below displays each location where an accident has happend as a bubble, with the size and color of the bubble indicating number of instances per location. Once again, you can use the buttons to choose weather type. 
-
-
- the size and color changes based on the frequency of crashes at certain locations. 
+After looking at the comparisons of each weather type, let's look at where the accidents happen. The **Bubble-Plot** below displays each location where an accident has happend as a bubble, with the size and color of the bubble indicating number of instances per location. Once again, you can use the buttons to choose weather type. 
 
 <div class="button-container">
   <button class="tab" onclick="openMap(event, 'bubblemap_normal_weather', '/assets/html/bubblemap_normal_weather.html')">Normal Weather</button>
@@ -196,13 +193,13 @@ After looking at the comparisons of each weather type, let's look at where the a
   <embed type="text/html" src="/assets/html/bubblemap_snow.html" width="800" height="650">
 </div>
 
+This plot is useful to identify specific spaces in the city, where you might want to be extra careful when manourvering in the different types of weather. It might also be relevant in identifying places in the city, where risk is apparent due to, perhaps, some unsafe traffic constellation. As there is a big difference in number of hours for each weather type, there is also a big differnece in instances. Notice therefor the legend to the right of each plot, indicating the number that each bubble represents. Looking at the vizualizations, the locations are very similar for each weather type. The busy intersections, are the leading culprite for all weather types. 
+
 <br>
 
 #### Heatmap of all collisions in different conditions (Rain, snow etc.) 
 
-**This is a heatmap showing the density of crashes:** It is very important to note that the amount of crashes at one location has no impact on this visualization. It can purely be used to show the places where crashes are most dense. It makes sense that manhatten is a hotspot, since it is more densely packed with both people and crossings where accidents might happen.
-
-
+This is a **heatmap** displays the density of crashes. This gives an indication of the areas where the accidents occur. It is very important to note that the amount of crashes at one location has no impact on this visualization, like it did in the Bubble-plot. It can purely be used to show the places where crashes are most dense. It makes sense that Manhatten is a hotspot, as it is more densely packed with both people and crossings where accidents might happen.
 
 <div class="button-container">
   <button class="tab" onclick="openMap(event, 'heatmap_normal_weather', '/assets/html/heatmap_normal_weather.html')">Normal Weather</button>
@@ -224,7 +221,36 @@ After looking at the comparisons of each weather type, let's look at where the a
   <embed type="text/html" width="800" height="650">
 </div>
 
-<br>
+Once again, the plots displays the same trends, regardless of weather. 
+
+
+#### Number of collisions at same location that resulted in at least 1 injury
+
+Now let's look at where the instances happen, that results in one or more injuries. Once again, you can use the buttons to display the map for each weather type. The map is a Bubble-plot, with the same functions as earlier. 
+
+<div class="button-container">
+  <button class="tab" onclick="openMap(event, 'injury_events_bubblemap_normal_weather', '/assets/html/injury_events_bubblemap_normal_weather.html')">Normal Weather</button>
+  <button class="tab" onclick="openMap(event, 'injury_events_bubblemap_vision_obstruction', '/assets/html/injury_events_bubblemap_vision_obstruction.html')">Fog/Mist/Haze</button>
+  <button class="tab" onclick="openMap(event, 'injury_events_bubblemap_rain', '/assets/html/injury_events_bubblemap_rain.html')">Rain</button>
+  <button class="tab" onclick="openMap(event, 'injury_events_bubblemap_snow', '/assets/html/injury_events_bubblemap_snow.html')">Snow</button>
+</div>
+
+<div id="injury_events_bubblemap_normal_weather" class="map">
+  <embed type="text/html" width="800" height="650">
+</div>
+<div id="injury_events_bubblemap_rain" class="map" style="display: none;">
+  <embed type="text/html" width="800" height="650">
+</div>
+<div id="injury_events_bubblemap_snow" class="map" style="display: none;">
+  <embed type="text/html" width="800" height="650">
+</div>
+<div id="injury_events_bubblemap_vision_obstruction" class="map" style="display: none;">
+  <embed type="text/html" width="800" height="650">
+</div>
+
+MMM
+
+
 
 #### Number of collisions at same location that resulted in at least 1 fatality
 
@@ -250,27 +276,6 @@ After looking at the comparisons of each weather type, let's look at where the a
 
 <br>
 
-#### Number of collisions at same location that resulted in at least 1 injury
-
-<div class="button-container">
-  <button class="tab" onclick="openMap(event, 'injury_events_bubblemap_normal_weather', '/assets/html/injury_events_bubblemap_normal_weather.html')">Normal Weather</button>
-  <button class="tab" onclick="openMap(event, 'injury_events_bubblemap_vision_obstruction', '/assets/html/injury_events_bubblemap_vision_obstruction.html')">Fog/Mist/Haze</button>
-  <button class="tab" onclick="openMap(event, 'injury_events_bubblemap_rain', '/assets/html/injury_events_bubblemap_rain.html')">Rain</button>
-  <button class="tab" onclick="openMap(event, 'injury_events_bubblemap_snow', '/assets/html/injury_events_bubblemap_snow.html')">Snow</button>
-</div>
-
-<div id="injury_events_bubblemap_normal_weather" class="map">
-  <embed type="text/html" width="800" height="650">
-</div>
-<div id="injury_events_bubblemap_rain" class="map" style="display: none;">
-  <embed type="text/html" width="800" height="650">
-</div>
-<div id="injury_events_bubblemap_snow" class="map" style="display: none;">
-  <embed type="text/html" width="800" height="650">
-</div>
-<div id="injury_events_bubblemap_vision_obstruction" class="map" style="display: none;">
-  <embed type="text/html" width="800" height="650">
-</div>
 
 
 <br>
