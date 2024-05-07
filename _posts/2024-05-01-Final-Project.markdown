@@ -96,11 +96,11 @@ First, some initial vizualization. Use the arrows to view the 4 different plots,
 
 <br>
 
-These basic visualizations provides an overview of the data, and examining these plots provides some initial insights. <strong>Yearly</strong>, there is a steady incline up until covid hits in 2020, whereafter there is a steep decline in accidents. 2012 is low, as data doesn't begin until July of that year.  <strong>Monthly</strong>, there seems to be more accidents happening in the later months of the year.  <strong>Weekly</strong>, There seems to be a steady incline between monday to friday, before a drop off in the weekends. Intuitevly, it makes sense that there are fewer accidents in the weekends, as fewer people will be on the road. Finally, the hourly results tells us that there is a peak in rates around the time people are driving home from work (at 16-17 pm), as well as a smaller peak when people are driving to work (at 8-9 am).
+These basic visualizations provides an overview of the data, and examining these plots provides some initial insights. <strong>Yearly</strong>, there is a steady incline up until covid hits in 2020, whereafter there is a steep decline in accidents. <strong>Monthly</strong>, there seems to be more accidents happening in the later months of the year.  <strong>Weekly</strong>, There seems to be a steady incline between monday to friday, before a drop off in the weekends. Intuitively, it makes sense that there are fewer accidents in the weekends, as fewer people will be on the road. Finally, the hourly results tells us that there is a peak in rates around the time people are driving home from work (at 16-17 pm), as well as a smaller peak when people are driving to work (at 8-9 am).
 
 <br>
 
-To get a more detailed look, the weekly data has been divided, so hourly data is available for each day of the week. By choosing the day(s) we wish to examine, we can get a more detailed look into the trends of each weekday. For example, if we look at the days monday-friday and compare them to sunday/saturday, it is apparent that, while there are more accidents in the weekdays, the weekend sees an increase in acidents in the nighttime. 
+To get a more detailed look, the weekly data has been divided, so hourly data is available for each day of the week. By choosing the day(s) we wish to examine, we can get a more detailed look into the trends of each weekday. For example, if we look at the days monday-friday and compare them to sunday/saturday, it is apparent that, while there are more accidents in the weekdays, the weekend sees an increase in acidents in the nighttime. Choose the day(s) you want to examine in the plot below: 
 
 <div style="display: flex; justify-content: center;">
     <embed 
@@ -123,21 +123,44 @@ The same can be done on a yearly basis. Use the Legend to isolate the year(s) yo
            >
 </div>
 
-This initial data exploration does not provide much insight. Some logical daily and weekly trends are apparent, but hte reasoning for these can only be guessed at. The next sections of this website will attempt to model the data with corresponding weather data, to examine if there are apaprent correlatations in accidents in NYC, and the weather of NYC. First each weather type will be examined individually, followed by a comparison of the different weather types. 
+This initial data exploration does not provide much insight. Some logical daily and weekly trends are apparent, but the reasoning for these can only be guessed at. The next sections of this website will attempt to model the data with corresponding weather data, to examine if there are apaprent correlatations in accidents in NYC, and the weather of NYC. The website is divided into section, where each section is a different type of plot, and each weather type is plotted. The website will explore four different types of weather data; <strong>Normal Weather</strong>, <strong>Rainy</strong>, <strong>Snowy</strong>, and <strong>Vision Obscurred</strong>. 'Normal Weather' simply means that there are no current weather conditions that might impair driving ability. So, a cloudy hour and a sunny hour will both be considered 'Normal Weather'. Vision Obscurred are the hours with fog or haze, or any vision obstructing phenomena, that is not rain or snow. 
 
-<br>
 
-The website will explore three different types of weather data; <strong>Normal Weather</strong>, <strong>Rainy</strong>, and <strong>Snowy</strong>. 'Normal Weather' simply means that there are no current weather conditions that might impair driving ability. So, a cloudy hour and a sunny hour will both be considered 'Normal Weather'. 
+<header>
+        <h1>Comparison of instances</h1>
+ </header>
+
+First, let's compare the weather data, ion an hourly basis to see if there are apparent trends for each weather type and the number of accidents. Use the three buttons below to choose the plot you wish to see. 'All Instances' will display the average number of accidents per hour, regardless of weather. 'Crashes with injuries' will display the average number of accidents per hour, where injuries to one or more persons as a result. 'Fatal Crashes'  will display the average number of accidents per hour, where one or more persons were killed. 
+
+<div class="button-container">
+  <button class="tab" onclick="openMap(event, 'ComparisonTotal', '/assets/html/ComparisonTotal.html')">All Instances</button>
+  <button class="tab" onclick="openMap(event, 'ComparisonInjured', '/assets/html/ComparisonInjured.html')">Crashes with injuries</button>
+  <button class="tab" onclick="openMap(event, 'ComparisonKilled', '/assets/html/ComparisonKilled.html')">Fatal Crashes</button>
+</div>
+
+<div id="ComparisonTotal" class="map">
+  <embed type="text/html" src="/assets/html/ComparisonTotal.html" width="800" height="400">
+</div>
+<div id="ComparisonInjured" class="map" style="display: none;">
+  <embed type="text/html" src="/assets/html/ComparisonInjured.html" width="800" height="400">
+</div>
+<div id="ComparisonKilled" class="map" style="display: none;">
+  <embed type="text/html" src="/assets/html/ComparisonKilled.html" width="800" height="400">
+</div>
+
+
+
+ {% include carousel.html height="50" unit="%" duration="7" number="6" %}
+
+
 
  <header>
-        <h1>Weather Type: Normal Weather</h1>
+        <h1>Bubblemap of all instances</h1>
  </header>
 
 
-
-#### Bubblemap of all collisions in different conditions (Rain, snow etc.) 
-
-**This is a bubble map showing car accidents in new york city:** Note that the size and color changes based on the frequency of crashes at certain locations. 
+The first vi
+ the size and color changes based on the frequency of crashes at certain locations. 
 
 <div class="button-container">
   <button class="tab" onclick="openMap(event, 'bubblemap_normal_weather', '/assets/html/bubblemap_normal_weather.html')">Normal Weather</button>
@@ -398,41 +421,6 @@ Much simpler due to fewer instances.
 <br>
 <br>
 <br>
-
-
-#### Comparing weather phenomena affect on collisions
-
-<div style="display: flex; justify-content: center;">
-    <embed 
-           type="text/html" 
-           src="/assets/html/ComparisonTotal.html"
-           width="1100"
-           height="400"
-           >
-</div>
-
-<div style="display: flex; justify-content: center;">
-    <embed 
-           type="text/html" 
-           src="/assets/html/ComparisonInjured.html"
-           width="1100"
-           height="400"
-           >
-</div>
-
-<div style="display: flex; justify-content: center;">
-    <embed 
-           type="text/html" 
-           src="/assets/html/ComparisonKilled.html"
-           width="1100"
-           height="400"
-           >
-</div>
-
- {% include carousel.html height="50" unit="%" duration="7" number="6" %}
-
-
-
 
 <script>
 function openMap(evt, mapName, mapSrc) {
