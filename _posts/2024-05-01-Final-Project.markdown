@@ -249,7 +249,7 @@ For normal weather, the plot displays some areas with a more dense bubble-popula
 
 #### Number of collisions at same location that resulted in at least 1 fatality
 
-Now that we've looked at insatcnes and injuries, this bubble-map displays the places where fatalities happen. Fatalities are, relatively rare, and the larger bubbles are typically stand alone instances where multiple people have died. 
+Now that we've looked at instances and injuries, this bubble-map displays the places where fatalities happen. Fatalities are, relatively rare, and the larger bubbles are typically stand alone instances where multiple people have died. 
 
 <div class="button-container">
   <button class="tab" onclick="openMap(event, 'deaths_events_bubblemap_normal_weather', '/assets/html/deaths_events_bubblemap_normal_weather.html')">Normal Weather</button>
