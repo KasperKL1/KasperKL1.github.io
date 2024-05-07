@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Car accidents in NYC"
+title:  "Car accidents in NYC (Final Project Part B)"
 
 carousels:
   - images: 
@@ -136,13 +136,13 @@ First, let's compare the weather data, in an hourly basis to see if there are ap
 </div>
 
 <div id="ComparisonTotal" class="map">
-  <embed type="text/html" src="/assets/html/ComparisonTotal.html" width="800" height="400">
+  <embed type="text/html" src="/assets/html/ComparisonTotal.html" width="1000" height="400">
 </div>
 <div id="ComparisonInjured" class="map" style="display: none;">
-  <embed type="text/html" src="/assets/html/ComparisonInjured.html" width="800" height="400">
+  <embed type="text/html" src="/assets/html/ComparisonInjured.html" width="1000" height="400">
 </div>
 <div id="ComparisonKilled" class="map" style="display: none;">
-  <embed type="text/html" src="/assets/html/ComparisonKilled.html" width="800" height="400">
+  <embed type="text/html" src="/assets/html/ComparisonKilled.html" width="1000" height="400">
 </div>
 
 Combining the findings in each plot provides some understanding of the trends in the data. Let's look at these findings. 
@@ -271,17 +271,51 @@ Now that we've looked at insatcnes and injuries, this bubble-map displays the pl
   <embed type="text/html" width="800" height="650">
 </div>
 
-<br>
-
 The plot is most useful in 'Normal Weather' as the sample size simply is not very large for the other weather types. 
 
+ <header>
+        <h1>Most dangerous locations</h1>
+ </header>
+
+Now that the data has been mapped, let's look at some specific locations, that according to the data, are the most dangerous for each weather type. The plot below displays a map of NYC, with markers for the top five locations for each weather type. You can click each marker for a description of: Weather Type and where that marker ranks in the top five locations. Notice that some locations are the same for multiple weather types. You can click each marker, and they will display all the markers located at that location. 
+
+<div style="display: flex; justify-content: center;">
+    <embed 
+           type="text/html" 
+           src="/assets/html/top5locations_collisions.html"
+           width="1100"
+           height="400"
+           >
+</div>
+
 <br>
+
+The same plot is displayed below, but only taking into account the accidents that have resulted in injuries or death. This are the location for each weather type that, according to the data of the last 10 years, or the most high risk to manourvre for each weather type. 
+
+<br>
+
+<div style="display: flex; justify-content: center;">
+    <embed 
+           type="text/html" 
+           src="/assets/html/top5locations_injuries.html"
+           width="1100"
+           height="400"
+           >
+</div>
+
+<br>
+
+<header>
+        <h1>Final Thoughts</h1>
+ </header>
+
+The initial idea of this website was to locate specific details that we were able to explore. However, there were not clear correlations, that we thought were worth exploring. Thererfore, the main idea of the webpage is to explore the dataset, and be able to see how dangerous specific locations in NYC are, related to each other, and related to weather. The next step in this webpage, could be to closely examine the specific locations, such as, for eaxmple, the aformentiond Verrazano Bridge. Here it could be examined why it could be that this location is high risk during foggy weather. 
 
 
 
-<br>
-<br>
-<br>
+
+
+
 
 <script>
 function openMap(evt, mapName, mapSrc) {
