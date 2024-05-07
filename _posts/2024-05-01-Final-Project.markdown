@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Car accidents in NYC"
+title:  "Car accidents in NYC (Final Project Part B)"
 
 carousels:
   - images: 
@@ -91,9 +91,6 @@ First, some initial vizualization. Use the arrows to view the 4 different plots,
 
   {% include carousel.html height="50" unit="%" duration="7" number="1" %}
  
-
-
-
 <br>
 
 These basic visualizations provides an overview of the data, and examining these plots provides some initial insights. <strong>Yearly</strong>, there is a steady incline up until covid hits in 2020, whereafter there is a steep decline in accidents. <strong>Monthly</strong>, there seems to be more accidents happening in the later months of the year.  <strong>Weekly</strong>, There seems to be a steady incline between monday to friday, before a drop off in the weekends. Intuitively, it makes sense that there are fewer accidents in the weekends, as fewer people will be on the road. Finally, the hourly results tells us that there is a peak in rates around the time people are driving home from work (at 16-17 pm), as well as a smaller peak when people are driving to work (at 8-9 am).
@@ -139,13 +136,13 @@ First, let's compare the weather data, in an hourly basis to see if there are ap
 </div>
 
 <div id="ComparisonTotal" class="map">
-  <embed type="text/html" src="/assets/html/ComparisonTotal.html" width="800" height="400">
+  <embed type="text/html" src="/assets/html/ComparisonTotal.html" width="1000" height="400">
 </div>
 <div id="ComparisonInjured" class="map" style="display: none;">
-  <embed type="text/html" src="/assets/html/ComparisonInjured.html" width="800" height="400">
+  <embed type="text/html" src="/assets/html/ComparisonInjured.html" width="1000" height="400">
 </div>
 <div id="ComparisonKilled" class="map" style="display: none;">
-  <embed type="text/html" src="/assets/html/ComparisonKilled.html" width="800" height="400">
+  <embed type="text/html" src="/assets/html/ComparisonKilled.html" width="1000" height="400">
 </div>
 
 Combining the findings in each plot provides some understanding of the trends in the data. Let's look at these findings. 
@@ -157,30 +154,21 @@ Combining the findings in each plot provides some understanding of the trends in
 
 **Rain:** Rain follows the trend of Normal Weather pretty well. There are more injuries in the later hours, but for most hours in the total accidents, Rain actually ranks below normal weather. Fatal crashes is once again difficult to read, as there is relatively very few rows where there are fatalities, but the data once again follows Normal Weather nicely, although Normal Weather is much more smoothed, due to a much higher count of that weather type. 
 
-**Vision obscuration:** 
+**Vision obscuration:** Vision obsscuration provides more accidents later in the day, and results in an upswing in injuries as well. Meaning in the darker hours, the fog will provide a higher risk of accident and injury. 
 
 
-
-
-
-
-
-
-
-
+In addition to happenings, we can also look at the top contributing factors for each weather type. Meaning, the reported reason for the collision. Note, that we have included 'Unspecified', as it is by far the most common input. 
 
 
  {% include carousel.html height="50" unit="%" duration="7" number="6" %}
 
-
+The factors for each type are very much alike. Slippery pavement for Snow is perhaps the biggest outlier, which is of course a natural cause for accidents in snowy weather. The contributing facors do not provide specific insights. 
 
  <header>
         <h1>Bubblemap of all instances</h1>
  </header>
 
-
-The first vi
- the size and color changes based on the frequency of crashes at certain locations. 
+After looking at the comparisons of each weather type, let's look at where the accidents happen. The **Bubble-Plot** below displays each location where an accident has happend as a bubble, with the size and color of the bubble indicating number of instances per location. Once again, you can use the buttons to choose weather type. Hover your mouse over a bubble to see the data of that bubble. 
 
 <div class="button-container">
   <button class="tab" onclick="openMap(event, 'bubblemap_normal_weather', '/assets/html/bubblemap_normal_weather.html')">Normal Weather</button>
@@ -202,13 +190,13 @@ The first vi
   <embed type="text/html" src="/assets/html/bubblemap_snow.html" width="800" height="650">
 </div>
 
+This plot is useful to identify specific spaces in the city, where you might want to be extra careful when manourvering in the different types of weather. It might also be relevant in identifying places in the city, where risk is apparent due to, perhaps, some unsafe traffic constellation. As there is a big difference in number of hours for each weather type, there is also a big differnece in instances. Notice therefor the legend to the right of each plot, indicating the number that each bubble represents. Looking at the vizualizations, the locations are very similar for each weather type. The busy intersections, are the leading culprite for all weather types. 
+
 <br>
 
 #### Heatmap of all collisions in different conditions (Rain, snow etc.) 
 
-**This is a heatmap showing the density of crashes:** It is very important to note that the amount of crashes at one location has no impact on this visualization. It can purely be used to show the places where crashes are most dense. It makes sense that manhatten is a hotspot, since it is more densely packed with both people and crossings where accidents might happen.
-
-
+This is a **heatmap** displays the density of crashes. This gives an indication of the areas where the accidents occur. It is very important to note that the amount of crashes at one location has no impact on this visualization, like it did in the Bubble-plot. It can purely be used to show the places where crashes are most dense. It makes sense that Manhatten is a hotspot, as it is more densely packed with both people and crossings where accidents might happen.
 
 <div class="button-container">
   <button class="tab" onclick="openMap(event, 'heatmap_normal_weather', '/assets/html/heatmap_normal_weather.html')">Normal Weather</button>
@@ -230,33 +218,12 @@ The first vi
   <embed type="text/html" width="800" height="650">
 </div>
 
-<br>
+Once again, the plots displays the same trends, regardless of weather. 
 
-#### Number of collisions at same location that resulted in at least 1 fatality
-
-<div class="button-container">
-  <button class="tab" onclick="openMap(event, 'deaths_events_bubblemap_normal_weather', '/assets/html/deaths_events_bubblemap_normal_weather.html')">Normal Weather</button>
-  <button class="tab" onclick="openMap(event, 'deaths_events_bubblemap_vision_obstruction', '/assets/html/deaths_events_bubblemap_vision_obstruction.html')">Fog/Mist/Haze</button>
-  <button class="tab" onclick="openMap(event, 'deaths_events_bubblemap_rain', '/assets/html/deaths_events_bubblemap_rain.html')">Rain</button>
-  <button class="tab" onclick="openMap(event, 'deaths_events_bubblemap_snow', '/assets/html/deaths_events_bubblemap_snow.html')">Snow</button>
-</div>
-
-<div id="deaths_events_bubblemap_normal_weather" class="map">
-  <embed type="text/html" width="800" height="650">
-</div>
-<div id="deaths_events_bubblemap_rain" class="map" style="display: none;">
-  <embed type="text/html" width="800" height="650">
-</div>
-<div id="deaths_events_bubblemap_snow" class="map" style="display: none;">
-  <embed type="text/html" width="800" height="650">
-</div>
-<div id="deaths_events_bubblemap_vision_obstruction" class="map" style="display: none;">
-  <embed type="text/html" width="800" height="650">
-</div>
-
-<br>
 
 #### Number of collisions at same location that resulted in at least 1 injury
+
+Now let's look at where the instances happen, that results in one or more injuries. Once again, you can use the buttons to display the map for each weather type. The map is a Bubble-plot, with the same functions as earlier. 
 
 <div class="button-container">
   <button class="tab" onclick="openMap(event, 'injury_events_bubblemap_normal_weather', '/assets/html/injury_events_bubblemap_normal_weather.html')">Normal Weather</button>
@@ -278,169 +245,77 @@ The first vi
   <embed type="text/html" width="800" height="650">
 </div>
 
+For normal weather, the plot displays some areas with a more dense bubble-population than the previous bubble plot, in the southeast and the north of the plot. This indicates, that there are areas where less accidents happen, but these accidents are more likely to result in injury. These maps are once again useful, to look at specific location and identify, where there might be room for improvement. An example is the large red dot on the Verrazano Bridge during Fog/Mist/Haze. This indicates, that for this location, there is a real risk factor during foggy weather, and the accidents that happen are severe enough to result in injuries. 
 
-<br>
+#### Number of collisions at same location that resulted in at least 1 fatality
 
-First, the 'Normal Weather' category is examined. Naturally, there are a much higher number of accidents for this weather type, as it is usually not raining or snowing. This will be taken into account when the data is compared, but first, some simple exploration.
+Now that we've looked at insatcnes and injuries, this bubble-map displays the places where fatalities happen. Fatalities are, relatively rare, and the larger bubbles are typically stand alone instances where multiple people have died. 
 
-  {% include carousel.html height="50" unit="%" duration="7" number="2" %}
-
-Since normal weather is a year round occurence, and by far the most normal weather condition, the initial barplots do not vary significantly from those that were presented earlier.  
-
-<br>
-
-Now let's look at the areas in which the occurences are happening. The follwing is a bubble-plot, where the bubble size and color indicates the number of reported accidents for each area.
-This plot is a good indicator as to where one should be extra careful, or perhaps, where law enforcement should examine possible changes to counter the higher number of events.  
-These happenins vary from minor bumps to deadly accidents. Naturally, the main focus should be to prevent deadly accidents. The plot below, displays a bubble-plot of places where deadly accidents have occured. 
-
-
-<div class="container">
-    <div class="plot">
-        <embed 
-               type="text/html" 
-               src="/assets/html/bubblemap_normal_weather.html"
-               width="550"   
-               height="600"
-               >
-    </div>
-    <div class="plot">
-        <embed 
-               type="text/html" 
-               src="/assets/html/deaths_events_bubblemap_normal_weather.html"
-               width="550"   
-               height="600"
-               >
-    </div>
+<div class="button-container">
+  <button class="tab" onclick="openMap(event, 'deaths_events_bubblemap_normal_weather', '/assets/html/deaths_events_bubblemap_normal_weather.html')">Normal Weather</button>
+  <button class="tab" onclick="openMap(event, 'deaths_events_bubblemap_vision_obstruction', '/assets/html/deaths_events_bubblemap_vision_obstruction.html')">Fog/Mist/Haze</button>
+  <button class="tab" onclick="openMap(event, 'deaths_events_bubblemap_rain', '/assets/html/deaths_events_bubblemap_rain.html')">Rain</button>
+  <button class="tab" onclick="openMap(event, 'deaths_events_bubblemap_snow', '/assets/html/deaths_events_bubblemap_snow.html')">Snow</button>
 </div>
 
-<br>
-
-To get a more specific look at the happenings, the following plot displays the areas with the most occurences. 
-
-
-<div style="display: flex; justify-content: center;">
-    <embed 
-           type="text/html" 
-           src="/assets/html/Normal_Weather_map.html"
-           width="1100"
-           height="600"
-           >
+<div id="deaths_events_bubblemap_normal_weather" class="map">
+  <embed type="text/html" width="800" height="650">
+</div>
+<div id="deaths_events_bubblemap_rain" class="map" style="display: none;">
+  <embed type="text/html" width="800" height="650">
+</div>
+<div id="deaths_events_bubblemap_snow" class="map" style="display: none;">
+  <embed type="text/html" width="800" height="650">
+</div>
+<div id="deaths_events_bubblemap_vision_obstruction" class="map" style="display: none;">
+  <embed type="text/html" width="800" height="650">
 </div>
 
-
-
-
-
+The plot is most useful in 'Normal Weather' as the sample size simply is not very large for the other weather types. 
 
  <header>
-        <h1>Weather Type: Rain</h1>
+        <h1>Most dangerous locations</h1>
  </header>
 
-
- {% include carousel.html height="50" unit="%" duration="7" number="3" %}
-
-
-Much simpler due to fewer instances.
-
-
-<div class="container">
-    <div class="plot">
-        <embed 
-               type="text/html" 
-               src="/assets/html/bubblemap_rain.html"
-               width="550"   
-               height="600"
-               >
-    </div>
-    <div class="plot">
-        <embed 
-               type="text/html" 
-               src="/assets/html/deaths_events_bubblemap_rain.html"
-               width="550"   
-               height="600"
-               >
-    </div>
-</div>
-
+Now that the data has been mapped, let's look at some specific locations, that according to the data, are the most dangerous for each weather type. The plot below displays a map of NYC, with markers for the top five locations for each weather type. You can click each marker for a description of: Weather Type and where that marker ranks in the top five locations. Notice that some locations are the same for multiple weather types. You can click each marker, and they will display all the markers located at that location. 
 
 <div style="display: flex; justify-content: center;">
     <embed 
            type="text/html" 
-           src="/assets/html/Rain_Present_map.html"
-           width="1300"
-           height="600"
+           src="/assets/html/top5locations_collisions.html"
+           width="1100"
+           height="400"
            >
 </div>
 
+<br>
+
+The same plot is displayed below, but only taking into account the accidents that have resulted in injuries or death. These are the locations for each weather type that, according to the data of the last 10 years, are the most high risk to manourvre for each weather type. 
+
+<br>
+
+<div style="display: flex; justify-content: center;">
+    <embed 
+           type="text/html" 
+           src="/assets/html/top5locations_injuries.html"
+           width="1100"
+           height="400"
+           >
+</div>
+
+<br>
 
 <header>
-        <h1>Weather Type: Snow</h1>
+        <h1>Final Thoughts</h1>
  </header>
 
-{% include carousel.html height="50" unit="%" duration="7" number="4" %}
-
-
-<div class="container">
-    <div class="plot">
-        <embed 
-               type="text/html" 
-               src="/assets/html/bubblemap_snow.html"
-               width="550"   
-               height="600"
-               >
-    </div>
-    <div class="plot">
-        <embed 
-               type="text/html" 
-               src="/assets/html/deaths_events_bubblemap_snow.html"
-               width="550"   
-               height="600"
-               >
-    </div>
-</div>
-
-
- <header>
-        <h1>Weather Type: Vision Obstruction</h1>
- </header>
-
- {% include carousel.html height="50" unit="%" duration="7" number="5" %}
-
-
-<div class="container">
-    <div class="plot">
-        <embed 
-               type="text/html" 
-               src="/assets/html/bubblemap_vision_obscuration.html"
-               width="550"   
-               height="600"
-               >
-    </div>
-    <div class="plot">
-        <embed 
-               type="text/html" 
-               src="/assets/html/deaths_events_bubblemap_vision_obstruction.html"
-               width="550"   
-               height="600"
-               >
-    </div>
-</div>
-
-
-<div style="display: flex; justify-content: center;">
-    <embed 
-           type="text/html" 
-           src="/assets/html/map_Vision_Obstruction_Present.html"
-           width="1100"
-           height="600"
-           >
-</div>
+The initial idea of this website was to locate specific details that we were able to explore. However, there were not clear correlations, that we thought were worth exploring. Therefore, the main idea of the webpage is to explore the dataset, and be able to see how dangerous specific locations in NYC are, related to each other, and related to weather. The next step in this webpage, could be to closely examine the specific locations, such as, for eaxmple, the aformentiond Verrazano Bridge. Here it could be examined, why it could be that this location is so high risk for injury, during foggy weather. 
 
 
 
-<br>
-<br>
-<br>
+
+
+
 
 <script>
 function openMap(evt, mapName, mapSrc) {
