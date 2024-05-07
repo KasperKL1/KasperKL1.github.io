@@ -148,6 +148,18 @@ First, let's compare the weather data, ion an hourly basis to see if there are a
   <embed type="text/html" src="/assets/html/ComparisonKilled.html" width="800" height="400">
 </div>
 
+Combining the findings in each plot provides some understanding of the trends in the data. Let's look at these findings. 
+<br>
+
+**Snow:** For 'All Instances', all weather types generally follows the same pattern. Snow appears to be the biggest outlier in the morning rush hours, meaning that when people are rushing to work, the slippery roads creates more accidents. Interestingly, these peak in instances do not result in a peak in instances with injuries, and later in the day, when the number of Snow instances are pretty much the same as the other weather types, there are fewer injuries than for the other weather types. This could indicate, that the accidents in snowy weather are less severe, probably due to lower speeds. There is quite a relative peak for fatal injuries, seeing that in the nighttime there is a higher chance of being killed in snowy weather than the other. The numbers are very low for this section however, so it is difficult to provide a definite result. 
+
+**Rain:** 
+
+
+
+
+
+
 
 
  {% include carousel.html height="50" unit="%" duration="7" number="6" %}
