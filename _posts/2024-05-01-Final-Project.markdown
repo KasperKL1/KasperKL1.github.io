@@ -130,7 +130,7 @@ This initial data exploration does not provide much insight. Some logical daily 
         <h1>Comparison of instances</h1>
  </header>
 
-First, let's compare the weather data, ion an hourly basis to see if there are apparent trends for each weather type and the number of accidents. Use the three buttons below to choose the plot you wish to see. 'All Instances' will display the average number of accidents per hour, regardless of weather. 'Crashes with injuries' will display the average number of accidents per hour, where injuries to one or more persons as a result. 'Fatal Crashes'  will display the average number of accidents per hour, where one or more persons were killed. 
+First, let's compare the weather data, in an hourly basis to see if there are apparent trends for each weather type and the number of accidents. Use the three buttons below to choose the plot you wish to see. 'All Instances' will display the average number of accidents per hour, regardless of weather. 'Crashes with injuries' will display the average number of accidents per hour, where injuries to one or more persons as a result. 'Fatal Crashes'  will display the average number of accidents per hour, where one or more persons were killed. Further, you can isolate the weather type by clicking them in the legend of each plot. 
 
 <div class="button-container">
   <button class="tab" onclick="openMap(event, 'ComparisonTotal', '/assets/html/ComparisonTotal.html')">All Instances</button>
@@ -151,9 +151,17 @@ First, let's compare the weather data, ion an hourly basis to see if there are a
 Combining the findings in each plot provides some understanding of the trends in the data. Let's look at these findings. 
 <br>
 
+**Normal Weather:** Normal Weather functions as a baseline throughout this webpage. This data basically provides insight into how the data acts, when weather is not a factor. 
+
 **Snow:** For 'All Instances', all weather types generally follows the same pattern. Snow appears to be the biggest outlier in the morning rush hours, meaning that when people are rushing to work, the slippery roads creates more accidents. Interestingly, these peak in instances do not result in a peak in instances with injuries, and later in the day, when the number of Snow instances are pretty much the same as the other weather types, there are fewer injuries than for the other weather types. This could indicate, that the accidents in snowy weather are less severe, probably due to lower speeds. There is quite a relative peak for fatal injuries, seeing that in the nighttime there is a higher chance of being killed in snowy weather than the other. The numbers are very low for this section however, so it is difficult to provide a definite result. 
 
-**Rain:** 
+**Rain:** Rain follows the trend of Normal Weather pretty well. There are more injuries in the later hours, but for most hours in the total accidents, Rain actually ranks below normal weather. Fatal crashes is once again difficult to read, as there is relatively very few rows where there are fatalities, but the data once again follows Normal Weather nicely, although Normal Weather is much more smoothed, due to a much higher count of that weather type. 
+
+**Vision obscuration:** 
+
+
+
+
 
 
 
@@ -447,7 +455,7 @@ function openMap(evt, mapName, mapSrc) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
   document.getElementById(mapName).style.display = "block";
-  document.getElementById(mapName).innerHTML = '<embed type="text/html" src="' + mapSrc + '" width="800" height="650">';
+  document.getElementById(mapName).innerHTML = '<embed type="text/html" src="' + mapSrc + '" width="800" height="400">';
   evt.currentTarget.className += " active";
 }
 </script>
