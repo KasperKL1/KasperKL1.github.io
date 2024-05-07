@@ -91,9 +91,6 @@ First, some initial vizualization. Use the arrows to view the 4 different plots,
 
   {% include carousel.html height="50" unit="%" duration="7" number="1" %}
  
-
-
-
 <br>
 
 These basic visualizations provides an overview of the data, and examining these plots provides some initial insights. <strong>Yearly</strong>, there is a steady incline up until covid hits in 2020, whereafter there is a steep decline in accidents. <strong>Monthly</strong>, there seems to be more accidents happening in the later months of the year.  <strong>Weekly</strong>, There seems to be a steady incline between monday to friday, before a drop off in the weekends. Intuitively, it makes sense that there are fewer accidents in the weekends, as fewer people will be on the road. Finally, the hourly results tells us that there is a peak in rates around the time people are driving home from work (at 16-17 pm), as well as a smaller peak when people are driving to work (at 8-9 am).
@@ -171,7 +168,7 @@ The factors for each type are very much alike. Slippery pavement for Snow is per
         <h1>Bubblemap of all instances</h1>
  </header>
 
-After looking at the comparisons of each weather type, let's look at where the accidents happen. The **Bubble-Plot** below displays each location where an accident has happend as a bubble, with the size and color of the bubble indicating number of instances per location. Once again, you can use the buttons to choose weather type. 
+After looking at the comparisons of each weather type, let's look at where the accidents happen. The **Bubble-Plot** below displays each location where an accident has happend as a bubble, with the size and color of the bubble indicating number of instances per location. Once again, you can use the buttons to choose weather type. Hover your mouse over a bubble to see the data of that bubble. 
 
 <div class="button-container">
   <button class="tab" onclick="openMap(event, 'bubblemap_normal_weather', '/assets/html/bubblemap_normal_weather.html')">Normal Weather</button>
@@ -248,11 +245,11 @@ Now let's look at where the instances happen, that results in one or more injuri
   <embed type="text/html" width="800" height="650">
 </div>
 
-MMM
-
-
+For normal weather, the plot displays some areas with a more dense bubble-population than the previous bubble plot, in the southeast and the north of the plot. This indicates, that there are areas where less accidents happen, but these accidents are more likely to result in injury. These maps are once again useful, to look at specific location and identify, where there might be room for improvement. An example is the large red dot on the Verrazano Bridge during Fog/Mist/Haze. This indicates, that for this location, there is a real risk factor during foggy weather, and the accidents that happen are severe enough to result in injuries. 
 
 #### Number of collisions at same location that resulted in at least 1 fatality
+
+Now that we've looked at insatcnes and injuries, this bubble-map displays the places where fatalities happen. Fatalities are, relatively rare, and the larger bubbles are typically stand alone instances where multiple people have died. 
 
 <div class="button-container">
   <button class="tab" onclick="openMap(event, 'deaths_events_bubblemap_normal_weather', '/assets/html/deaths_events_bubblemap_normal_weather.html')">Normal Weather</button>
@@ -276,23 +273,10 @@ MMM
 
 <br>
 
-
+The plot is most useful in 'Normal Weather' as the sample size simply is not very large for the other weather types. 
 
 <br>
 
-
-  {% include carousel.html height="50" unit="%" duration="7" number="2" %}
-
-
-
- {% include carousel.html height="50" unit="%" duration="7" number="3" %}
-
-
-
-{% include carousel.html height="50" unit="%" duration="7" number="4" %}
-
-
- {% include carousel.html height="50" unit="%" duration="7" number="5" %}
 
 
 <br>
