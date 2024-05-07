@@ -290,7 +290,7 @@ Now that the data has been mapped, let's look at some specific locations, that a
 
 <br>
 
-The same plot is displayed below, but only taking into account the accidents that have resulted in injuries or death. This are the location for each weather type that, according to the data of the last 10 years, or the most high risk to manourvre for each weather type. 
+The same plot is displayed below, but only taking into account the accidents that have resulted in injuries or death. These are the locations for each weather type that, according to the data of the last 10 years, are the most high risk to manourvre for each weather type. 
 
 <br>
 
@@ -309,7 +309,7 @@ The same plot is displayed below, but only taking into account the accidents tha
         <h1>Final Thoughts</h1>
  </header>
 
-The initial idea of this website was to locate specific details that we were able to explore. However, there were not clear correlations, that we thought were worth exploring. Thererfore, the main idea of the webpage is to explore the dataset, and be able to see how dangerous specific locations in NYC are, related to each other, and related to weather. The next step in this webpage, could be to closely examine the specific locations, such as, for eaxmple, the aformentiond Verrazano Bridge. Here it could be examined why it could be that this location is high risk during foggy weather. 
+The initial idea of this website was to locate specific details that we were able to explore. However, there were not clear correlations, that we thought were worth exploring. Therefore, the main idea of the webpage is to explore the dataset, and be able to see how dangerous specific locations in NYC are, related to each other, and related to weather. The next step in this webpage, could be to closely examine the specific locations, such as, for eaxmple, the aformentiond Verrazano Bridge. Here it could be examined, why it could be that this location is so high risk for injury, during foggy weather. 
 
 
 
