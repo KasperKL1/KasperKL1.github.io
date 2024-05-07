@@ -27,7 +27,12 @@ carousels:
     - image:  /assets/images/YearlyVO.png
     - image:  /assets/images/MonthlyVO.png
     - image:  /assets/images/WeeklyVO.png
-    - image:  /assets/images/HourlyVO.png    
+    - image:  /assets/images/HourlyVO.png 
+  - images: 
+    - image:  /assets/images/NormalCont.png
+    - image:  /assets/images/RainCont.png
+    - image:  /assets/images/SnowCont.png
+    - image:  /assets/images/VOCont.png      
 ---
 <style>
        .tab {
@@ -102,7 +107,7 @@ To get a more detailed look, the weekly data has been divided, so hourly data is
            type="text/html" 
            src="/assets/html/Bokeh.html"
            width="1100"
-           height="600"
+           height="400"
            >
 </div>
 
@@ -114,7 +119,7 @@ The same can be done on a yearly basis. Use the Legend to isolate the year(s) yo
            type="text/html" 
            src="/assets/html/Bokeh2.html"
            width="1100"
-           height="600"
+           height="400"
            >
 </div>
 
@@ -400,7 +405,7 @@ Much simpler due to fewer instances.
 <div style="display: flex; justify-content: center;">
     <embed 
            type="text/html" 
-           src="/assets/html/proportion_of_persons_injured.html"
+           src="/assets/html/ComparisonTotal.html"
            width="1100"
            height="600"
            >
@@ -409,22 +414,22 @@ Much simpler due to fewer instances.
 <div style="display: flex; justify-content: center;">
     <embed 
            type="text/html" 
-           src="/assets/html/proportion_of_persons_killed.html"
+           src="/assets/html/ComparisonInjured.html"
            width="1100"
            height="600"
            >
 </div>
-
 
 <div style="display: flex; justify-content: center;">
     <embed 
            type="text/html" 
-           src="/assets/html/proportion_of_persons_killed.html"
+           src="/assets/html/ComparisonKilled.html"
            width="1100"
            height="600"
            >
 </div>
 
+ {% include carousel.html height="50" unit="%" duration="7" number="6" %}
 
 
 
