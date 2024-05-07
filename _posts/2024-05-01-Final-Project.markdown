@@ -127,7 +127,7 @@ This initial data exploration does not provide much insight. Some logical daily 
         <h1>Comparison of instances</h1>
  </header>
 
-First, let's compare the weather data, in an hourly basis to see if there are apparent trends for each weather type and the number of accidents. Use the three buttons below to choose the plot you wish to see. 'All Instances' will display the average number of accidents per hour, regardless of weather. 'Crashes with injuries' will display the average number of accidents per hour, where injuries to one or more persons as a result. 'Fatal Crashes'  will display the average number of accidents per hour, where one or more persons were killed. Further, you can isolate the weather type by clicking them in the legend of each plot. 
+First, let's compare the weather data, on an hourly basis to see if there are apparent trends for each weather type and the number of accidents. Use the three buttons below to choose the plot you wish to see. 'All Instances' will display the average number of accidents per hour, regardless of weather. 'Crashes with injuries' will display the average number of accidents per hour, where injuries to one or more persons as a result. 'Fatal Crashes'  will display the average number of accidents per hour, where one or more persons were killed. Further, you can isolate the weather type by clicking them in the legend of each plot. 
 
 <div class="button-container">
   <button class="tab" onclick="openMap(event, 'ComparisonTotal', '/assets/html/ComparisonTotal.html')">All Instances</button>
